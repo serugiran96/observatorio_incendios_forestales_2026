@@ -68,6 +68,9 @@ def test_coordinar_entrega_no_cuenta_como_entrega():
          ("sectores de Erapata y Molonopata", ["Limatambo", "Mollepata"], "Anta")),
         ("causó daños materiales (viviendas) en Limacniño, distrito de Pomacanchi, provincia de Acomayo",
          ("Limacniño", ["Pomacanchi"], "Acomayo")),
+        # El reporte no nombra el sector: no se debe inventar una localidad
+        ("daños a sectores diversos (cobertura natural) sector y distrito de Pomacanchi, provincia de Acomayo",
+         ("", ["Pomacanchi"], "Acomayo")),
     ],
 )
 def test_ubicacion_desde_descripcion(descripcion, esperado):

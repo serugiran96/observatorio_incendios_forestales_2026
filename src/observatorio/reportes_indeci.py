@@ -350,6 +350,10 @@ def _ubicacion(descripcion: str) -> tuple[str, list[str], str]:
     sector_txt = previo[sector.start():] if sector and sector.re is _PALABRAS_LUGAR else (sector.group(1) if sector else "")
     # Quitar conectores colgantes al final: "..., en el", "... del", "... de"
     sector_txt = _limpiar(re.sub(r"(?:[,\s]+(?:del?|en(?:\s+(?:el|la|los|las))?))+\s*$", "", sector_txt))
+    # Una palabra de lugar sin nombre ("sector y distrito de ...") no es una localidad
+    if re.fullmatch(r"(?:en\s+(?:el\s+)?)?(?:sector(?:es)?|comunidad(?:es)?|centro poblado|anexo|caser[ií]o)"
+                    r"(?:\s+(?:y|de|del|el|la))?", sector_txt, re.I):
+        sector_txt = ""
     if misma:
         return sector_txt, [nombre], nombre
     distritos = [d.strip().title() for d in re.split(r"\s+y\s+|,\s*", lugar.group("distritos")) if d.strip()]

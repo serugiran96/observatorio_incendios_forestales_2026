@@ -28,7 +28,7 @@ Detalle en [`docs/criterios_verificacion.md`](docs/criterios_verificacion.md).
 | 1 | Entorno, estructura, esquemas y plan | Completa |
 | 2 | Investigación documental y registro de evidencias | Completa (inventario al 21-oct-2026) |
 | 3 | Análisis geoespacial (Earth Engine, FIRMS) | En curso: límites, ecosistemas e indicadores listos; satélite pendiente de credenciales |
-| 4 | Dashboard Streamlit | Pendiente |
+| 4 | Dashboard Streamlit | Completa: paneles A–H, matrices de atención, restauración y presupuesto (capas satelitales pendientes) |
 | 5 | Informe ejecutivo | Pendiente |
 | 6 | Pruebas finales y presentación | Pendiente |
 
@@ -37,7 +37,8 @@ Ver [`docs/plan_de_trabajo.md`](docs/plan_de_trabajo.md).
 ## Estructura
 
 ```
-├── app.py                  # Dashboard Streamlit (Fase 4)
+├── app.py                  # Dashboard Streamlit: navegación y filtros globales
+├── paginas/                # Paneles del dashboard (resumen, mapa, ficha, atención, restauración, presupuesto, metodología)
 ├── src/observatorio/       # Funciones reutilizables
 │   ├── config.py           #   rutas, fecha de corte, sistemas de referencia
 │   ├── esquemas.py         #   columnas, vocabularios y reglas de coherencia
@@ -46,10 +47,15 @@ Ver [`docs/plan_de_trabajo.md`](docs/plan_de_trabajo.md).
 │   ├── reportes_indeci.py      # extracción de los reportes COEN-INDECI (PDF)
 │   ├── territorio.py           # límites oficiales y asignación de UBIGEO
 │   ├── focos_calor.py          # NASA FIRMS: descarga, limpieza y corroboración
-│   └── gee_analisis.py         # Earth Engine: NBR/dNBR, severidad, área quemada probable
+│   ├── gee_analisis.py         # Earth Engine: NBR/dNBR, severidad, área quemada probable
+│   ├── indicadores.py          # reglas de agregación (duplicados, varios distritos)
+│   ├── atencion.py             # matriz de atención inmediata con criterios explícitos
+│   ├── restauracion.py         # catálogo de medidas y aplicación por distrito
+│   ├── presupuesto.py          # matriz de intervenciones, costos (o pendientes) y escenarios
+│   └── tablero.py              # carga, filtros y gráficos del dashboard
 ├── scripts/                # Procesos ejecutables (validación, descargas, análisis)
 ├── data/
-│   ├── raw/registro/       # fuentes.csv, evidencias.csv, vacios_informacion.csv (versionados)
+│   ├── raw/registro/       # fuentes, evidencias, vacíos, medidas de restauración y costos (versionados)
 │   ├── raw/documentos/     # copias de documentos fuente (no versionadas)
 │   ├── raw/geodatos/       # capas descargadas por script (no versionadas)
 │   └── processed/          # salidas reproducibles que lee el dashboard
@@ -83,6 +89,25 @@ UV_PROJECT_ENVIRONMENT=venv.nosync uv sync && ln -s venv.nosync .venv
 
 Ver `docs/decisiones_tecnicas.md` (DT-09).
 
+## Dashboard
+
+```bash
+uv run streamlit run app.py
+```
+
+| Panel | Contenido |
+|---|---|
+| A · Resumen ejecutivo | Cifras clave con su fuente, qué muestran los datos y qué no se puede afirmar todavía |
+| B · Mapa | Indicadores por distrito, ecosistemas, incendios por distrito y, cuando existan, capas satelitales |
+| C · Filtros | Barra lateral: periodo, provincia, distrito y estado del incendio (aplican a todas las páginas) |
+| D · Ficha territorial | Incendios, atención, evidencias con enlaces, ecosistemas, medidas, presupuesto y vacíos de un distrito |
+| E · Atención inmediata | Matriz por incendio con criterios explícitos (sin ranking) y descarga en CSV |
+| F · Restauración | Medidas con su nivel de sustento (justificada, condicionada, hipótesis, no recomendada) por distrito |
+| G · Presupuesto y brechas | Intervenciones con cantidades documentadas, costos pendientes de cotización y escenarios con supuestos del usuario |
+| H · Metodología y fuentes | Estados de verificación, fuentes con enlaces, vacíos de información, limitaciones y fecha de actualización |
+
+El dashboard no contiene datos ficticios: solo lee `data/processed` y el registro curado.
+
 ## Uso
 
 ```bash
@@ -103,6 +128,9 @@ uv run python scripts/descargar_ecosistemas.py                      # ecosistema
 uv run python scripts/agregar_por_distrito.py                       # inventario georreferenciado e indicadores
 uv run python scripts/descargar_focos_calor.py                      # requiere FIRMS_MAP_KEY
 uv run python scripts/ejecutar_analisis_gee.py                      # requiere GEE_PROJECT y autenticación
+# Fase 4 – matrices y dashboard
+uv run python scripts/construir_matrices.py                         # atención inmediata, restauración y presupuesto
+uv run streamlit run app.py                                         # abre el dashboard en http://localhost:8501
 ```
 
 ### Credenciales (no se versionan)

@@ -70,3 +70,30 @@ páginas devuelven menos registros que su tamaño (geometrías nulas).
 Una caída del NBR no prueba un incendio. Solo se llama "área quemada probable" al cambio que coincide
 con focos de calor a ≤ 1,5 km en el periodo; el resto se informa como "cambio no atribuido". Los
 focos de calor tampoco se convierten en hectáreas: se usan solo para corroborar.
+
+### DT-14 · Dashboard multipágina que solo lee archivos procesados (21-oct-2026)
+`app.py` usa `st.navigation` con una página por panel (`paginas/`) y filtros globales en la barra
+lateral. Las páginas no generan cifras: leen `data/processed` y el registro curado mediante
+`observatorio.tablero`, con caché que se invalida cuando cambia la fecha del archivo. Así el
+dashboard muestra exactamente lo que producen los scripts y lo que validan las pruebas. Las reglas
+de agregación (duplicados, incendios de varios distritos) están en `observatorio.indicadores` y las
+usan tanto los scripts como el dashboard; una prueba verifica que den las mismas cifras.
+
+### DT-15 · Un símbolo por distrito en el mapa (21-oct-2026)
+Ninguna fuente publica coordenadas de los incendios. Dibujar un punto por incendio, agruparlos o
+desplazarlos al azar sugeriría ubicaciones que no existen. El mapa muestra un círculo por distrito
+en su punto interior, con tamaño según el número de incendios, color según si alguno sigue abierto
+y la lista de incendios en la ventana emergente.
+
+### DT-16 · Catálogos curados de medidas y costos (21-oct-2026)
+Las medidas de restauración y los costos unitarios son tablas CSV versionadas, editables sin
+programar y validadas automáticamente: cada medida debe citar fuentes registradas, y un costo
+unitario sin fuente es un error. Cuando haya cotizaciones verificables basta con completar
+`costos_unitarios.csv` y volver a ejecutar `scripts/construir_matrices.py`.
+
+### DT-17 · Paleta de colores validada (21-oct-2026)
+Los gráficos usan una sola serie de color cuando las categorías no tienen orden (provincias,
+distritos), una rampa secuencial azul en el mapa y, para categorías, colores en orden fijo
+comprobados para daltonismo. El estado del incendio en el mapa se distingue por resaltado (naranja
+frente a gris) y se explica en una leyenda escrita.
+

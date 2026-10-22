@@ -60,17 +60,32 @@ No se registran nombres, edades, DNI, teléfonos ni imágenes de personas damnif
 Las víctimas se registran solo como cifras. El validador rechaza textos con patrones de DNI o
 celular.
 
-## Banderas de atención (Fase 4)
+## Criterios de atención inmediata (implementados en la Fase 4)
 
-En lugar de un ranking o puntaje de "abandono", cada territorio mostrará banderas explícitas, cada
-una con su motivo y las evidencias que la activan, por ejemplo:
+No hay ranking ni puntaje. Cada incendio del periodo prioritario lleva criterios verdadero/falso
+(`src/observatorio/atencion.py`, `CRITERIOS`), visibles en la matriz y en el dashboard:
 
-- Daño humano reportado (fallecidos o lesionados).
-- Necesidad documentada sin evidencia posterior de atención.
-- Fuentes de agua, viviendas o medios de vida afectados.
-- Evidencia solo de prensa (requiere verificación oficial).
-- Más de N días sin actualización desde el evento.
-- Fuentes contradictorias.
+| Criterio | Grupo |
+|---|---|
+| Personas fallecidas o lesionadas | seguimiento humanitario |
+| Personas damnificadas o viviendas inhabitables o destruidas | seguimiento humanitario |
+| Cultivos o ganado perdidos o afectados | seguimiento humanitario |
+| Damnificados sin entrega de BAH documentada | verificar atención |
+| Lesionados sin atención médica documentada en el reporte | verificar atención |
+| Abierto y sin actualización pública en más de 14 días (hasta la fecha de corte) | verificar atención |
+| Tabla de daños ilegible, sin reporte COEN localizado o distrito por verificar | verificar atención |
+| Abierto al último reporte; posible duplicado | contexto |
 
-Las banderas distinguen entre "requiere verificación" y "posible atención urgente"; no se combinan
-en un puntaje único.
+El estado de atención de cada incendio usa el vocabulario de los seis estados:
+
+- **Atención humanitaria documentada:** el reporte o una evidencia del mismo distrito describe una
+  entrega de BAH, atención médica o insumos pecuarios.
+- **Atención no verificada:** hay daños a personas, viviendas o medios de vida y no se encontró
+  registro público de atención. No significa que no hubo atención.
+- **Necesidad pendiente documentada:** hay una solicitud de ayuda sin entrega posterior registrada.
+- "Sin daños a personas reportados": solo daños a la cobertura; no requiere atención humanitaria.
+
+La ayuda anunciada o entregada a nivel provincial se muestra rotulada como "nivel provincial, no
+atribuible a este incendio" y no cambia el estado de atención. Los anuncios sin territorio se
+muestran aparte. Las evidencias solo de prensa no generan filas: la matriz parte del inventario
+oficial, y las cifras contradictorias se tratan como vacíos de información.

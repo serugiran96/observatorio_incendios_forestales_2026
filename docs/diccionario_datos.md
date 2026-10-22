@@ -88,6 +88,35 @@ Una fila por vacío de información detectado (pregunta 4 del observatorio).
 | `fecha_registro` | Fecha en que se documentó el vacío |
 | `accion_sugerida` | Cómo podría cerrarse (solicitud de información, verificación en campo...) |
 
+## `data/raw/registro/medidas_restauracion.csv`
+
+Catálogo curado de medidas de restauración (una fila por medida; validado contra `fuentes.csv`).
+
+| Columna | Descripción |
+|---|---|
+| `id_medida` | `R01`…`R11` |
+| `componente` | `restauracion_ecologica`, `rehabilitacion_productiva`, `prevencion`, `monitoreo` o `no_recomendada` |
+| `ecosistema_objetivo` | `pajonal`, `bofedal`, `bosque`, `laderas`, `zona_agricola` o `todos` |
+| `horizonte` | Plazo de ejecución desde el incendio |
+| `condicion_aplicacion` | Cuándo corresponde aplicarla |
+| `nivel_sustento` | `justificada`, `condicionada` (requiere evaluación de campo o satélite), `hipotesis` o `no_recomendada` |
+| `sustento`, `fuentes` | Resumen de la evidencia e IDs de `fuentes.csv` |
+| `indicador_monitoreo`, `entidades_referenciales` | Cómo medir el avance y quién podría ejecutarla |
+
+## `data/raw/registro/costos_unitarios.csv`
+
+Costos unitarios por intervención. **Un costo solo puede escribirse con su fuente**; si no la hay,
+queda vacío y `estado_costo = "pendiente de cotización"`. `como_estimar` explica cómo obtenerlo.
+
+| Columna | Descripción |
+|---|---|
+| `id_intervencion` | `H01`–`H03` (humanitaria), `P01`–`P02` (productiva), `E01`–`E04` (ecológica), `M01` (monitoreo) |
+| `unidad` | Unidad de la cantidad (persona damnificada, vivienda, hectárea…) |
+| `costo_unitario_soles`, `fuente_costo` | Costo en soles e ID de su fuente (ambos vacíos al 21-oct-2026) |
+| `estado_costo` | `pendiente de cotización`, `referencial` o `cotizado` |
+| `como_estimar` | Método para obtener el costo (SEACE, fichas IOARR, INIA…) |
+| `entidades_referenciales`, `fuentes_competencia` | Entidades competentes según el nivel de emergencia y su fuente |
+
 ## Archivos procesados (`data/processed/`)
 
 | Archivo | Contenido |
@@ -96,6 +125,13 @@ Una fila por vacío de información detectado (pregunta 4 del observatorio).
 | `indice_reportes_indeci_cusco.csv` | Índice de reportes COEN-INDECI (número, fecha, lugar, enlace, PDF local) |
 | `incendios_cusco_consolidado.csv` | **Inventario de incendios**: una fila por incendio con fuente principal, ubicación, fecha de ocurrencia, código SINPAD, estado, cifras de daños (EDAN), indicadores de ayuda documentada y posibles duplicados |
 | `acciones_respuesta_indeci.csv` | Todas las acciones de respuesta reportadas al COEN (fecha, nivel, entidad, tipo, texto) |
+| `incendios_cusco_georreferenciado.csv` | Inventario con UBIGEO, punto interior del distrito (aproximado) y marca de alias por verificar |
+| `indicadores_distrito.csv` / `.geojson` | Indicadores del periodo prioritario por distrito (112 filas), con ecosistemas |
+| `ecosistemas_cusco.geojson`, `ecosistemas_por_distrito.csv` | Ecosistemas MINAM en Cusco y su superficie por distrito |
+| `matriz_atencion_inmediata.csv` | Una fila por incendio del periodo: daños, personas y medios de vida, necesidades, ayuda anunciada y entregada, pendientes, instituciones, fuentes, `estado_danos`, `estado_atencion`, criterios `c_*`, `seguimiento_humanitario`, `verificar_atencion`, `motivos` |
+| `restauracion_medidas_distrito.csv` | Distrito × medida aplicable, con `nivel_sustento`, `estado_aplicacion` ("aplica" / "verificar en campo") y `motivo` |
+| `matriz_presupuesto.csv` | Línea por intervención y territorio: problema, beneficiarios, cantidad y su fuente, costo (o pendiente), recursos documentados, anuncios, `brecha`, entidades, cómo estimar |
+| `recursos_documentados_contexto.csv` | Presupuestos regionales documentados que no se asignan a ninguna línea |
 
 En el inventario, `estado` resume el último reporte disponible: "cerrado (emergencia atendida)",
 "cierre temporal (atención en curso)" o "abierto al último reporte". Este último significa que en los

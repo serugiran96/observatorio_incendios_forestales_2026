@@ -28,36 +28,7 @@ import geopandas as gpd
 import pandas as pd
 
 from observatorio import config, territorio
-
-CIFRAS = [
-    "cobertura_natural_destruida_ha",
-    "personas_fallecidas",
-    "personas_lesionadas",
-    "personas_damnificadas",
-    "personas_afectadas",
-    "viviendas_afectadas",
-    "viviendas_inhabitables",
-    "viviendas_destruidas",
-    "ganado_perdido",
-    "ganado_afectado",
-    "cultivos_ha",
-]
-
-
-def excluir_duplicados(inventario: pd.DataFrame) -> set[str]:
-    """IDs de eventos que se omiten al sumar sin duplicados: de cada grupo se conserva el de mayor cobertura."""
-    excluidos = set()
-    vistos = set()
-    for fila in inventario.itertuples(index=False):
-        if not isinstance(fila.posibles_duplicados, str) or not fila.posibles_duplicados or fila.id_evento in vistos:
-            continue
-        grupo = {fila.id_evento, *fila.posibles_duplicados.split("; ")}
-        vistos |= grupo
-        miembros = inventario[inventario["id_evento"].isin(grupo)]
-        conservar = miembros.sort_values("cobertura_natural_destruida_ha", ascending=False, na_position="last").iloc[0]["id_evento"]
-        excluidos |= grupo - {conservar}
-    return excluidos
-
+from observatorio.indicadores import CIFRAS, excluir_duplicados
 
 # Grupos de ecosistemas (Mapa Nacional de Ecosistemas, MINAM) usados por el módulo de restauración
 GRUPOS_ECOSISTEMA = {

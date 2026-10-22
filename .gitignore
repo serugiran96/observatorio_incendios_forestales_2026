@@ -241,3 +241,6 @@ data/raw/geodatos/*
 *.gpkg-journal
 # Sistema operativo
 .DS_Store
+
+# Streamlit
+.streamlit/secrets.toml

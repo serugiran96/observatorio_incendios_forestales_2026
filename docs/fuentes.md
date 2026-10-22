@@ -89,6 +89,27 @@ provincial. Se conservan ambas cifras tal como fueron publicadas.
 | Ecosistemas (24 tipos en Cusco) | MINAM, Mapa Nacional de Ecosistemas del Perú (2018) | REST `ServicioEcosistemas_MINAM`, por páginas | 16 473 polígonos generalizados a ~50 m; cubren el 99,6 % de la región; la capa del mapa se simplifica a ~400 m |
 | GADM 4.1 | gadm.org | Descartado | Sin UBIGEO y desactualizado (10 distritos en La Convención frente a 14 oficiales) |
 
+### 1.5 Referencias técnicas para restauración y competencias
+
+Registradas en `fuentes.csv` (`F-0020`–`F-0029`) y citadas por el catálogo de medidas:
+
+| ID | Referencia | Uso |
+|---|---|---|
+| F-0020 | SERFOR (2018), lineamientos de restauración (R.D.E. 083-2018) | Definición y principios; PDF no accesible (HTTP 403) |
+| F-0021 | SERFOR (2019), principios y opciones de restauración | Opciones: prevención, manejo de regeneración natural, plantaciones |
+| F-0022 | Román et al. (2025), boletín IGP; Roman et al. (2024), *Fire* | Recuperación de pastizales quemados en Calca y Quispicanchi |
+| F-0023 | Estudio de Chiara, Ayacucho (2023) | Rebrote predominante en pajonal; 4-5 años |
+| F-0024 | Román-Cuesta et al. (2011) | Turba y rebrote en bosques montanos del sur del Perú (solo resumen) |
+| F-0025 | Caretas (2024), cita a SERFOR | Técnicas post-incendio de SERFOR |
+| F-0026 | MITECO (2026), Miño-Sil | Fajinas, albarradas y mulching (contexto español) |
+| F-0027 | FUEGORED (2010) | Emergencia antes de las primeras lluvias |
+| F-0028 | El Peruano (2022), queuña en Ollantaytambo | Viveros comunales de especies nativas |
+| F-0029 | INDECI (2026), presentación al Congreso | Niveles de emergencia y quién entrega BAH |
+
+No se encontró evidencia publicada sobre la recuperación de bofedales quemados ni costos unitarios
+verificables para las intervenciones; ambos vacíos se reflejan en el catálogo ("hipótesis") y en
+la matriz de presupuesto ("pendiente de cotización").
+
 ## 2. Fuentes consultadas manualmente
 
 Notas de prensa y medios: se registran como `F-0001`, `F-0002`… en `fuentes.csv`. Los medios
@@ -105,6 +126,7 @@ salvo que coincidan con una fuente oficial.
 | Mercado Negro (nota de donaciones, 12-oct) | HTTP 403 | Canales de donación no verificados |
 | Sitemap del portal INDECI | Redirige a otra página | Se usa el feed RSS |
 | Panamericana (algunas notas) | Metadatos de fecha inválidos | La fecha se infiere del texto y se anota la incertidumbre |
+| PDF de lineamientos SERFOR (`serfor.gob.pe`) y repositorio SERFOR | HTTP 403 / sin respuesta | Contenido tomado de la presentación F-0021 |
 
 ## 4. Cifras regionales en disputa
 

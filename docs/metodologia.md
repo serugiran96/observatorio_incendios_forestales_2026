@@ -78,3 +78,45 @@ orienta el módulo de restauración: no se recomiendan intervenciones sin conoce
 - **EDAN frente a satélite.** La "cobertura natural destruida" de la EDAN es una estimación de campo
   hecha por las municipalidades, no un área medida. Las diferencias con el satélite son esperables y
   se muestran, no se corrigen.
+
+## 6. Atención inmediata (0–90 días)
+
+`scripts/construir_matrices.py` arma una matriz con una fila por incendio del periodo prioritario,
+a partir del inventario, las acciones de respuesta reportadas al COEN y las evidencias manuales del
+mismo distrito. Los criterios y estados están en [`criterios_verificacion.md`](criterios_verificacion.md).
+No se calcula ningún puntaje.
+
+## 7. Restauración (3 meses – 5 años)
+
+- Catálogo curado de 11 medidas (`data/raw/registro/medidas_restauracion.csv`), cada una con su
+  sustento y fuentes: lineamientos y opciones de restauración de SERFOR, el estudio del IGP sobre
+  pastizales quemados en Calca y Quispicanchi (recuperación de la biomasa en hasta cuatro años),
+  estudios sobre rebrote en pajonales y bosques montanos, y guías de control de erosión post-incendio.
+- **Nivel de sustento explícito:** justificada, condicionada a evaluación de campo o satélite,
+  hipótesis o no recomendada. Plantar especies exóticas o plantar en pajonales y bofedales no se
+  recomienda.
+- **Aplicación por distrito:** según los ecosistemas presentes (≥ 10 ha) y los daños documentados.
+  Como no se sabe qué ecosistema se quemó, las medidas condicionadas e hipotéticas quedan como
+  "verificar en campo". El control de erosión espera el área quemada con pendiente ≥ 30° del
+  análisis satelital.
+
+## 8. Presupuesto y brechas
+
+- Las líneas humanitarias y productivas son por incendio y usan las cantidades de la EDAN
+  (damnificados, viviendas, lesionados, hectáreas de cultivo, cabezas de ganado). Las ecológicas son
+  por distrito.
+- **Costos:** ninguno tiene fuente al 21-oct-2026; todas las líneas figuran como "pendiente de
+  cotización", con el método de estimación. El validador rechaza un costo sin fuente.
+- **Brecha:** se calcula solo con costo total y recursos documentados en soles; si no, se explica
+  por qué no es calculable. Los presupuestos regionales documentados (proyecto CUI 2526543,
+  PP 0068) se muestran aparte y no se descuentan de ninguna línea.
+- **Escenarios:** el dashboard permite escribir costos unitarios supuestos para explorar órdenes de
+  magnitud. Se rotulan como supuestos de quien consulta y no se guardan.
+
+## 9. Dashboard
+
+`app.py` (Streamlit, Plotly, Folium) solo lee `data/processed` y el registro curado. Paneles: A
+resumen ejecutivo, B mapa, C filtros globales (barra lateral), D ficha territorial, E atención
+inmediata, F restauración, G presupuesto y escenarios, H metodología y fuentes. Cada gráfico tiene
+su tabla equivalente. Las capas satelitales aparecen solo si existen sus archivos.
+
