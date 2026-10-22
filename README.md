@@ -27,7 +27,7 @@ Detalle en [`docs/criterios_verificacion.md`](docs/criterios_verificacion.md).
 |---|---|---|
 | 1 | Entorno, estructura, esquemas y plan | Completa |
 | 2 | Investigación documental y registro de evidencias | Completa (inventario al 21-oct-2026) |
-| 3 | Análisis geoespacial (Earth Engine, FIRMS) | Pendiente (requiere credenciales) |
+| 3 | Análisis geoespacial (Earth Engine, FIRMS) | En curso: límites, ecosistemas e indicadores listos; satélite pendiente de credenciales |
 | 4 | Dashboard Streamlit | Pendiente |
 | 5 | Informe ejecutivo | Pendiente |
 | 6 | Pruebas finales y presentación | Pendiente |
@@ -43,7 +43,10 @@ Ver [`docs/plan_de_trabajo.md`](docs/plan_de_trabajo.md).
 │   ├── esquemas.py         #   columnas, vocabularios y reglas de coherencia
 │   ├── evidencias.py       #   carga, validación y escritura del registro
 │   ├── reportes_emergencia.py  # extracción de los reportes diarios OGRD-Congreso (PDF)
-│   └── reportes_indeci.py      # extracción de los reportes COEN-INDECI (PDF)
+│   ├── reportes_indeci.py      # extracción de los reportes COEN-INDECI (PDF)
+│   ├── territorio.py           # límites oficiales y asignación de UBIGEO
+│   ├── focos_calor.py          # NASA FIRMS: descarga, limpieza y corroboración
+│   └── gee_analisis.py         # Earth Engine: NBR/dNBR, severidad, área quemada probable
 ├── scripts/                # Procesos ejecutables (validación, descargas, análisis)
 ├── data/
 │   ├── raw/registro/       # fuentes.csv, evidencias.csv, vacios_informacion.csv (versionados)
@@ -83,14 +86,24 @@ Ver `docs/decisiones_tecnicas.md` (DT-09).
 ## Uso
 
 ```bash
-uv run pytest                                             # pruebas
-uv run python scripts/validar_registro.py                 # valida fuentes, evidencias y vacíos de información
-uv run python scripts/extraer_reportes_emergencia.py --descargar   # reportes OGRD-Congreso -> registro
-uv run python scripts/indexar_reportes_indeci.py --descargar   # índice y PDF de reportes COEN-INDECI de Cusco
-uv run python scripts/extraer_reportes_indeci.py          # PDF COEN-INDECI -> registro e inventario consolidado
+uv run pytest                                   # pruebas
+uv run python scripts/validar_registro.py       # valida fuentes, evidencias y vacíos de información
 ```
 
-El análisis geoespacial (Fase 3) y el dashboard (Fase 4) agregarán sus comandos aquí.
+Flujo completo de datos (cada paso es reproducible y se puede volver a ejecutar):
+
+```bash
+# Fase 2 – inventario documental
+uv run python scripts/extraer_reportes_emergencia.py --descargar   # reportes OGRD-Congreso
+uv run python scripts/indexar_reportes_indeci.py --descargar        # índice y PDF COEN-INDECI
+uv run python scripts/extraer_reportes_indeci.py                    # registro e inventario consolidado
+# Fase 3 – territorio y teledetección
+uv run python scripts/descargar_limites.py                          # 112 distritos con UBIGEO
+uv run python scripts/descargar_ecosistemas.py                      # ecosistemas MINAM por distrito
+uv run python scripts/agregar_por_distrito.py                       # inventario georreferenciado e indicadores
+uv run python scripts/descargar_focos_calor.py                      # requiere FIRMS_MAP_KEY
+uv run python scripts/ejecutar_analisis_gee.py                      # requiere GEE_PROJECT y autenticación
+```
 
 ### Credenciales (no se versionan)
 

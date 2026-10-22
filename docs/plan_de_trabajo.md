@@ -27,7 +27,7 @@ Plan aprobado el 21 de octubre de 2026. Fecha de corte inicial de la informació
 |---|---|---|---|
 | 1 | Entorno, estructura, arquitectura, plan de investigación | `.venv` (Python 3.12), esquemas, validador, pruebas, esta documentación | Completa |
 | 2 | Investigación documental | `data/raw/registro/*.csv` con fuentes, evidencias y vacíos de información; inventario consolidado de incendios | Completa |
-| 3 | Análisis geoespacial (GEE + FIRMS) | Límites, focos de calor, severidad estimada e indicadores en `data/processed/` | Requiere credenciales |
+| 3 | Análisis geoespacial (GEE + FIRMS) | Límites, focos de calor, severidad estimada e indicadores en `data/processed/` | En curso (límites, ecosistemas e indicadores listos; satélite requiere credenciales) |
 | 4 | Dashboard Streamlit | `app.py` + `pages/` (paneles A–H) | Pendiente |
 | 5 | Informe ejecutivo | `reports/informe_ejecutivo.md` | Pendiente |
 | 6 | Pruebas, revisión y presentación | Suite completa, revisión cruzada de cifras, guion de presentación | Pendiente |

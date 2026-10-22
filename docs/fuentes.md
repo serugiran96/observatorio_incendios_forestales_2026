@@ -81,6 +81,14 @@ Lucha contra la Pobreza – Cusco (F-0019, enero de 2026), que cita al COER Cusc
 tiene una inconsistencia interna: 2020 suma 322 incendios en la serie mensual y 302 en la tabla
 provincial. Se conservan ambas cifras tal como fueron publicadas.
 
+### 1.4 Capas geográficas
+
+| Capa | Fuente | Acceso | Notas |
+|---|---|---|---|
+| Límites distritales (112 distritos, UBIGEO, población 2018) | OSINERGMIN, servicio "Límites distritales del Perú" (INEI) | REST, consulta por departamento 08 | Se versiona la versión simplificada (~100 m); la completa queda en `data/raw/geodatos/` |
+| Ecosistemas (24 tipos en Cusco) | MINAM, Mapa Nacional de Ecosistemas del Perú (2018) | REST `ServicioEcosistemas_MINAM`, por páginas | 16 473 polígonos generalizados a ~50 m; cubren el 99,6 % de la región; la capa del mapa se simplifica a ~400 m |
+| GADM 4.1 | gadm.org | Descartado | Sin UBIGEO y desactualizado (10 distritos en La Convención frente a 14 oficiales) |
+
 ## 2. Fuentes consultadas manualmente
 
 Notas de prensa y medios: se registran como `F-0001`, `F-0002`… en `fuentes.csv`. Los medios

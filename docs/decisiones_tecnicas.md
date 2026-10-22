@@ -26,10 +26,10 @@ una misma versión del repositorio.
 Cusco cruza las zonas UTM 18S y 19S. Las áreas se calculan en *South America Albers Equal Area
 Conic* (`ESRI:102033`); los datos se almacenan en WGS84 (`EPSG:4326`).
 
-### DT-06 · Límites distritales (21-oct-2026)
-geoBoundaries no publica distritos (ADM3) para Perú. Se priorizarán los límites oficiales del INEI; si
-no son descargables de forma reproducible, se usará GADM 4.1 nivel 3. La licencia de GADM no permite
-redistribuirlo, por lo que se descarga con un script y **no se versiona**.
+### DT-06 · Límites distritales (21-oct-2026, actualizada)
+geoBoundaries no publica distritos (ADM3) para Perú y GADM 4.1 está desactualizado y no tiene UBIGEO.
+Se usan los límites del servicio de cartografía de OSINERGMIN (UBIGEO INEI, 112 distritos de Cusco,
+población 2018), descargados con `scripts/descargar_limites.py`.
 
 ### DT-07 · Sin ranking de "abandono" ni datos simulados (21-oct-2026)
 La priorización se expresa con banderas explícitas y auditables (ver `criterios_verificacion.md`),
@@ -59,3 +59,14 @@ magnitudes: si no hay cifra, se registra una descripción cualitativa.
 El listado web de emergencias de INDECI y su API REST no filtran de forma fiable por región y tipo. El
 feed RSS con parámetro de búsqueda sí lo hace y está ordenado por fecha, lo que permite un índice
 reproducible que se detiene al llegar al inicio del periodo.
+
+### DT-12 · Ecosistemas por servicio de mapas (21-oct-2026)
+El Mapa Nacional de Ecosistemas se distribuye como un archivo nacional de 1,24 GB. Se consulta el
+servicio REST del MINAM solo para la caja de Cusco, por páginas y con geometría generalizada (~50 m).
+La paginación avanza por desplazamiento hasta el total informado por el servicio, porque algunas
+páginas devuelven menos registros que su tamaño (geometrías nulas).
+
+### DT-13 · Atribución del cambio de vegetación a fuego (21-oct-2026)
+Una caída del NBR no prueba un incendio. Solo se llama "área quemada probable" al cambio que coincide
+con focos de calor a ≤ 1,5 km en el periodo; el resto se informa como "cambio no atribuido". Los
+focos de calor tampoco se convierten en hectáreas: se usan solo para corroborar.

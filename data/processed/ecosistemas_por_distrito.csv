@@ -1,0 +1,737 @@
+ubigeo,provincia,distrito,ecosistema,ha,pct_distrito
+080101,Cusco,Cusco,Matorral andino,4176.3,47.2
+080101,Cusco,Cusco,Pajonal de puna humeda,3864.7,43.68
+080101,Cusco,Cusco,Plantación Forestal,616.0,6.96
+080101,Cusco,Cusco,Zona agrícola,190.9,2.16
+080102,Cusco,Ccorca,Pajonal de puna humeda,11207.3,69.34
+080102,Cusco,Ccorca,Matorral andino,3627.0,22.44
+080102,Cusco,Ccorca,Zona agrícola,1170.0,7.24
+080102,Cusco,Ccorca,Bofedal,91.3,0.56
+080102,Cusco,Ccorca,Plantación Forestal,67.3,0.42
+080103,Cusco,Poroy,Matorral andino,928.4,69.11
+080103,Cusco,Poroy,Pajonal de puna humeda,256.9,19.12
+080103,Cusco,Poroy,Plantación Forestal,107.3,7.99
+080103,Cusco,Poroy,Zona agrícola,50.8,3.78
+080104,Cusco,San Jerónimo,Pajonal de puna humeda,3412.7,41.17
+080104,Cusco,San Jerónimo,Matorral andino,2721.2,32.82
+080104,Cusco,San Jerónimo,Plantación Forestal,1080.6,13.03
+080104,Cusco,San Jerónimo,Zona agrícola,904.7,10.91
+080104,Cusco,San Jerónimo,Bofedal,171.1,2.06
+080105,Cusco,San Sebastian,Matorral andino,4630.4,74.72
+080105,Cusco,San Sebastian,Pajonal de puna humeda,875.2,14.12
+080105,Cusco,San Sebastian,Zona agrícola,456.1,7.36
+080105,Cusco,San Sebastian,Plantación Forestal,235.3,3.8
+080106,Cusco,Santiago,Pajonal de puna humeda,3432.9,65.8
+080106,Cusco,Santiago,Matorral andino,1736.1,33.28
+080106,Cusco,Santiago,Plantación Forestal,48.1,0.92
+080107,Cusco,Saylla,Matorral andino,1285.6,54.32
+080107,Cusco,Saylla,Pajonal de puna humeda,637.2,26.92
+080107,Cusco,Saylla,Zona agrícola,303.9,12.84
+080107,Cusco,Saylla,Plantación Forestal,88.1,3.72
+080107,Cusco,Saylla,Bofedal,52.1,2.2
+080201,Acomayo,Acomayo,Pajonal de puna humeda,8640.9,61.09
+080201,Acomayo,Acomayo,Matorral andino,3381.1,23.9
+080201,Acomayo,Acomayo,Zona agrícola,1265.2,8.94
+080201,Acomayo,Acomayo,Plantación Forestal,741.8,5.24
+080201,Acomayo,Acomayo,Bofedal,114.0,0.81
+080201,Acomayo,Acomayo,Lago y laguna,2.0,0.01
+080202,Acomayo,Acopia,Pajonal de puna humeda,2541.1,35.68
+080202,Acomayo,Acopia,Lago y laguna,1841.9,25.86
+080202,Acomayo,Acopia,Matorral andino,1479.9,20.78
+080202,Acomayo,Acopia,Zona agrícola,1135.8,15.95
+080202,Acomayo,Acopia,Plantación Forestal,122.9,1.73
+080203,Acomayo,Acos,Matorral andino,6485.5,47.14
+080203,Acomayo,Acos,Pajonal de puna humeda,4540.8,33.01
+080203,Acomayo,Acos,Zona agrícola,2605.2,18.94
+080203,Acomayo,Acos,Plantación Forestal,105.2,0.76
+080203,Acomayo,Acos,Bosque relicto altoandino (Queñoal y otros),17.0,0.12
+080203,Acomayo,Acos,Lago y laguna,3.0,0.02
+080204,Acomayo,Mosoc Llacta,Pajonal de puna humeda,1660.4,38.13
+080204,Acomayo,Mosoc Llacta,Matorral andino,1339.9,30.77
+080204,Acomayo,Mosoc Llacta,Zona agrícola,687.4,15.79
+080204,Acomayo,Mosoc Llacta,Lago y laguna,666.5,15.31
+080205,Acomayo,Pomacanchi,Pajonal de puna humeda,17020.2,63.92
+080205,Acomayo,Pomacanchi,Matorral andino,7210.8,27.08
+080205,Acomayo,Pomacanchi,Zona agrícola,2245.7,8.43
+080205,Acomayo,Pomacanchi,Bofedal,82.1,0.31
+080205,Acomayo,Pomacanchi,Plantación Forestal,53.0,0.2
+080205,Acomayo,Pomacanchi,Lago y laguna,16.7,0.06
+080206,Acomayo,Rondocan,Matorral andino,10073.3,55.08
+080206,Acomayo,Rondocan,Pajonal de puna humeda,7959.8,43.52
+080206,Acomayo,Rondocan,Bofedal,165.2,0.9
+080206,Acomayo,Rondocan,Zona agrícola,86.6,0.47
+080206,Acomayo,Rondocan,Plantación Forestal,5.3,0.03
+080207,Acomayo,Sangarara,Pajonal de puna humeda,4469.0,51.82
+080207,Acomayo,Sangarara,Matorral andino,2397.2,27.8
+080207,Acomayo,Sangarara,Zona agrícola,1415.3,16.41
+080207,Acomayo,Sangarara,Lago y laguna,341.5,3.96
+080207,Acomayo,Sangarara,Plantación Forestal,0.5,0.01
+080301,Anta,Anta,Zona agrícola,9553.1,51.21
+080301,Anta,Anta,Pajonal de puna humeda,4730.6,25.36
+080301,Anta,Anta,Matorral andino,2980.0,15.98
+080301,Anta,Anta,Plantación Forestal,1389.7,7.45
+080302,Anta,Ancahuasi,Pajonal de puna humeda,4471.4,36.09
+080302,Anta,Ancahuasi,Zona agrícola,3476.3,28.06
+080302,Anta,Ancahuasi,Matorral andino,3223.6,26.02
+080302,Anta,Ancahuasi,Plantación Forestal,693.7,5.6
+080302,Anta,Ancahuasi,Periglaciar,337.0,2.72
+080302,Anta,Ancahuasi,Bofedal,185.9,1.5
+080303,Anta,Cachimayo,Zona agrícola,2396.8,55.28
+080303,Anta,Cachimayo,Pajonal de puna humeda,882.0,20.34
+080303,Anta,Cachimayo,Matorral andino,778.9,17.96
+080303,Anta,Cachimayo,Plantación Forestal,278.2,6.42
+080304,Anta,Chinchaypujio,Matorral andino,16318.1,41.28
+080304,Anta,Chinchaypujio,Pajonal de puna humeda,13558.9,34.3
+080304,Anta,Chinchaypujio,Zona agrícola,5930.1,15.0
+080304,Anta,Chinchaypujio,"Bosque estacionalmente seco interandino (Marañón, Mantaro, Pampas y Apurímac)",2892.7,7.32
+080304,Anta,Chinchaypujio,Plantación Forestal,410.1,1.04
+080304,Anta,Chinchaypujio,Bofedal,323.9,0.82
+080304,Anta,Chinchaypujio,Río,92.5,0.23
+080305,Anta,Huarocondo,Pajonal de puna humeda,10422.4,47.35
+080305,Anta,Huarocondo,Zona agrícola,4766.7,21.65
+080305,Anta,Huarocondo,Matorral andino,3537.9,16.07
+080305,Anta,Huarocondo,Periglaciar,2096.3,9.52
+080305,Anta,Huarocondo,Plantación Forestal,734.3,3.34
+080305,Anta,Huarocondo,Bofedal,289.2,1.31
+080305,Anta,Huarocondo,Glaciar,165.8,0.75
+080306,Anta,Limatambo,Matorral andino,26021.2,51.4
+080306,Anta,Limatambo,Pajonal de puna humeda,15435.3,30.49
+080306,Anta,Limatambo,Zona agrícola,3658.7,7.23
+080306,Anta,Limatambo,Periglaciar,2497.5,4.93
+080306,Anta,Limatambo,"Bosque estacionalmente seco interandino (Marañón, Mantaro, Pampas y Apurímac)",2300.6,4.54
+080306,Anta,Limatambo,Bofedal,495.1,0.98
+080306,Anta,Limatambo,Glaciar,95.1,0.19
+080306,Anta,Limatambo,Río,67.7,0.13
+080306,Anta,Limatambo,Plantación Forestal,53.8,0.11
+080307,Anta,Mollepata,Matorral andino,13284.6,36.0
+080307,Anta,Mollepata,Pajonal de puna humeda,8628.0,23.38
+080307,Anta,Mollepata,Zona agrícola,4437.3,12.03
+080307,Anta,Mollepata,Periglaciar,4085.7,11.07
+080307,Anta,Mollepata,"Bosque estacionalmente seco interandino (Marañón, Mantaro, Pampas y Apurímac)",2922.5,7.92
+080307,Anta,Mollepata,Bosque altimontano (Pluvial) de Yunga,2311.8,6.27
+080307,Anta,Mollepata,Bosque montano de Yunga,586.2,1.59
+080307,Anta,Mollepata,Glaciar,510.3,1.38
+080307,Anta,Mollepata,Río,133.0,0.36
+080308,Anta,Pucyura,Zona agrícola,1615.2,47.61
+080308,Anta,Pucyura,Matorral andino,1150.1,33.9
+080308,Anta,Pucyura,Pajonal de puna humeda,519.7,15.32
+080308,Anta,Pucyura,Plantación Forestal,107.9,3.18
+080309,Anta,Zurite,Zona agrícola,3588.9,59.06
+080309,Anta,Zurite,Pajonal de puna humeda,1102.4,18.14
+080309,Anta,Zurite,Plantación Forestal,1009.5,16.61
+080309,Anta,Zurite,Matorral andino,376.2,6.19
+080401,Calca,Calca,Pajonal de puna humeda,17633.9,56.69
+080401,Calca,Calca,Matorral andino,5771.9,18.55
+080401,Calca,Calca,Periglaciar,4172.4,13.41
+080401,Calca,Calca,Zona agrícola,3094.0,9.95
+080401,Calca,Calca,Glaciar,240.5,0.77
+080401,Calca,Calca,Bosque relicto altoandino (Queñoal y otros),111.8,0.36
+080401,Calca,Calca,Lago y laguna,72.6,0.23
+080401,Calca,Calca,Plantación Forestal,10.5,0.03
+080402,Calca,Coya,Pajonal de puna humeda,3026.8,43.06
+080402,Calca,Coya,Matorral andino,2596.2,36.93
+080402,Calca,Coya,Zona agrícola,1266.4,18.02
+080402,Calca,Coya,Lago y laguna,140.1,1.99
+080403,Calca,Lamay,Pajonal de puna humeda,5672.4,59.47
+080403,Calca,Lamay,Matorral andino,2608.6,27.35
+080403,Calca,Lamay,Zona agrícola,1253.6,13.14
+080403,Calca,Lamay,Lago y laguna,3.8,0.04
+080404,Calca,Lares,Pajonal de puna humeda,61200.3,83.61
+080404,Calca,Lares,Bosque altimontano (Pluvial) de Yunga,6354.0,8.68
+080404,Calca,Lares,Periglaciar,4405.5,6.02
+080404,Calca,Lares,Vegetación Secundaria,437.9,0.6
+080404,Calca,Lares,Glaciar,310.0,0.42
+080404,Calca,Lares,Lago y laguna,185.4,0.25
+080404,Calca,Lares,Bosque relicto mesoandino,167.5,0.23
+080404,Calca,Lares,Bosque montano de Yunga,92.6,0.13
+080404,Calca,Lares,Bosque relicto altoandino (Queñoal y otros),45.3,0.06
+080405,Calca,Pisac,Pajonal de puna humeda,9060.0,61.37
+080405,Calca,Pisac,Matorral andino,2924.7,19.81
+080405,Calca,Pisac,Zona agrícola,2706.6,18.33
+080405,Calca,Pisac,Bofedal,39.5,0.27
+080405,Calca,Pisac,Lago y laguna,32.5,0.22
+080406,Calca,San Salvador,Pajonal de puna humeda,5541.6,43.29
+080406,Calca,San Salvador,Matorral andino,4511.3,35.24
+080406,Calca,San Salvador,Zona agrícola,2660.4,20.78
+080406,Calca,San Salvador,Plantación Forestal,46.4,0.36
+080406,Calca,San Salvador,Bofedal,36.9,0.29
+080406,Calca,San Salvador,Lago y laguna,5.1,0.04
+080407,Calca,Taray,Matorral andino,2472.7,44.88
+080407,Calca,Taray,Pajonal de puna humeda,1892.6,34.35
+080407,Calca,Taray,Zona agrícola,1112.8,20.2
+080407,Calca,Taray,Plantación Forestal,31.5,0.57
+080408,Calca,Yanatile,Bosque altimontano (Pluvial) de Yunga,70600.8,37.28
+080408,Calca,Yanatile,Pajonal de puna humeda,48649.1,25.69
+080408,Calca,Yanatile,Vegetación Secundaria,35936.4,18.98
+080408,Calca,Yanatile,Bosque montano de Yunga,28896.0,15.26
+080408,Calca,Yanatile,Río,2285.5,1.21
+080408,Calca,Yanatile,Bosque basimontano de Yunga,1690.3,0.89
+080408,Calca,Yanatile,Matorral andino,493.8,0.26
+080408,Calca,Yanatile,Periglaciar,472.4,0.25
+080408,Calca,Yanatile,Glaciar,133.2,0.07
+080408,Calca,Yanatile,Lago y laguna,131.1,0.07
+080408,Calca,Yanatile,"Bosque estacionalmente seco oriental (Huallaga, Ene - Perené, Urubamba)",80.3,0.04
+080501,Canas,Yanaoca,Pajonal de puna humeda,21176.8,72.77
+080501,Canas,Yanaoca,Matorral andino,4265.9,14.66
+080501,Canas,Yanaoca,Zona agrícola,3413.8,11.73
+080501,Canas,Yanaoca,Bofedal,221.0,0.76
+080501,Canas,Yanaoca,Lago y laguna,22.9,0.08
+080502,Canas,Checca,Pajonal de puna humeda,24938.3,49.45
+080502,Canas,Checca,Matorral andino,11309.9,22.43
+080502,Canas,Checca,Pajonal de puna seca,10222.1,20.27
+080502,Canas,Checca,Zona agrícola,2079.5,4.12
+080502,Canas,Checca,Bofedal,1586.0,3.14
+080502,Canas,Checca,Periglaciar,296.2,0.59
+080503,Canas,Kunturkanki,Pajonal de puna humeda,34147.5,85.97
+080503,Canas,Kunturkanki,Bofedal,2368.0,5.96
+080503,Canas,Kunturkanki,Matorral andino,2019.8,5.09
+080503,Canas,Kunturkanki,Zona agrícola,713.8,1.8
+080503,Canas,Kunturkanki,Lago y laguna,468.9,1.18
+080504,Canas,Langui,Pajonal de puna humeda,12677.8,68.97
+080504,Canas,Langui,Zona agrícola,4006.6,21.8
+080504,Canas,Langui,Lago y laguna,1372.1,7.46
+080504,Canas,Langui,Periglaciar,267.9,1.46
+080504,Canas,Langui,Matorral andino,33.1,0.18
+080504,Canas,Langui,Bofedal,25.2,0.14
+080505,Canas,Layo,Pajonal de puna humeda,28445.9,61.51
+080505,Canas,Layo,Zona agrícola,6601.4,14.28
+080505,Canas,Layo,Periglaciar,5368.1,11.61
+080505,Canas,Layo,Lago y laguna,3846.3,8.32
+080505,Canas,Layo,Bofedal,1957.1,4.23
+080505,Canas,Layo,Glaciar,25.2,0.05
+080506,Canas,Pampamarca,Pajonal de puna humeda,1681.2,53.82
+080506,Canas,Pampamarca,Zona agrícola,842.6,26.97
+080506,Canas,Pampamarca,Matorral andino,446.9,14.31
+080506,Canas,Pampamarca,Lago y laguna,153.1,4.9
+080507,Canas,Quehue,Pajonal de puna humeda,10010.8,67.27
+080507,Canas,Quehue,Matorral andino,2973.4,19.98
+080507,Canas,Quehue,Zona agrícola,1534.7,10.31
+080507,Canas,Quehue,Pajonal de puna seca,243.0,1.63
+080507,Canas,Quehue,Bofedal,118.9,0.8
+080508,Canas,Tupac Amaru,Pajonal de puna humeda,6935.4,60.16
+080508,Canas,Tupac Amaru,Matorral andino,2675.2,23.2
+080508,Canas,Tupac Amaru,Zona agrícola,1277.9,11.08
+080508,Canas,Tupac Amaru,Lago y laguna,507.6,4.4
+080508,Canas,Tupac Amaru,Bofedal,133.2,1.16
+080601,Canchis,Sicuani,Pajonal de puna humeda,42748.5,66.41
+080601,Canchis,Sicuani,Zona agrícola,5808.6,9.02
+080601,Canchis,Sicuani,Periglaciar,5316.5,8.26
+080601,Canchis,Sicuani,Matorral andino,4872.5,7.57
+080601,Canchis,Sicuani,Bofedal,4188.5,6.51
+080601,Canchis,Sicuani,Plantación Forestal,966.9,1.5
+080601,Canchis,Sicuani,Lago y laguna,455.5,0.71
+080601,Canchis,Sicuani,Bosque relicto altoandino (Queñoal y otros),17.8,0.03
+080602,Canchis,Checacupe,Pajonal de puna humeda,54009.2,57.69
+080602,Canchis,Checacupe,Periglaciar,27105.0,28.95
+080602,Canchis,Checacupe,Bofedal,4724.7,5.05
+080602,Canchis,Checacupe,Matorral andino,3589.9,3.83
+080602,Canchis,Checacupe,Glaciar,2035.7,2.17
+080602,Canchis,Checacupe,Zona agrícola,1757.9,1.88
+080602,Canchis,Checacupe,Lago y laguna,265.1,0.28
+080602,Canchis,Checacupe,Plantación Forestal,135.4,0.14
+080603,Canchis,Combapata,Pajonal de puna humeda,12365.1,71.4
+080603,Canchis,Combapata,Matorral andino,2809.3,16.22
+080603,Canchis,Combapata,Zona agrícola,2064.0,11.92
+080603,Canchis,Combapata,Bofedal,40.2,0.23
+080603,Canchis,Combapata,Periglaciar,23.8,0.14
+080603,Canchis,Combapata,Bosque relicto altoandino (Queñoal y otros),16.6,0.1
+080604,Canchis,Marangani,Pajonal de puna humeda,25848.7,59.01
+080604,Canchis,Marangani,Periglaciar,10552.9,24.09
+080604,Canchis,Marangani,Zona agrícola,3734.2,8.53
+080604,Canchis,Marangani,Bofedal,2276.0,5.2
+080604,Canchis,Marangani,Matorral andino,1138.9,2.6
+080604,Canchis,Marangani,Lago y laguna,133.9,0.31
+080604,Canchis,Marangani,Glaciar,92.9,0.21
+080604,Canchis,Marangani,Plantación Forestal,23.6,0.05
+080605,Canchis,Pitumarca,Pajonal de puna humeda,61251.3,56.13
+080605,Canchis,Pitumarca,Periglaciar,29681.8,27.2
+080605,Canchis,Pitumarca,Glaciar,6357.8,5.83
+080605,Canchis,Pitumarca,Bofedal,5926.8,5.43
+080605,Canchis,Pitumarca,Lago y laguna,3691.6,3.38
+080605,Canchis,Pitumarca,Matorral andino,1296.3,1.19
+080605,Canchis,Pitumarca,Zona agrícola,858.1,0.79
+080605,Canchis,Pitumarca,Bosque relicto altoandino (Queñoal y otros),55.0,0.05
+080606,Canchis,San Pablo,Pajonal de puna humeda,34454.1,65.89
+080606,Canchis,San Pablo,Periglaciar,10717.5,20.49
+080606,Canchis,San Pablo,Bofedal,3122.5,5.97
+080606,Canchis,San Pablo,Matorral andino,1935.9,3.7
+080606,Canchis,San Pablo,Zona agrícola,1803.1,3.45
+080606,Canchis,San Pablo,Glaciar,138.6,0.27
+080606,Canchis,San Pablo,Plantación Forestal,107.4,0.21
+080606,Canchis,San Pablo,Lago y laguna,14.3,0.03
+080607,Canchis,San Pedro,Pajonal de puna humeda,2194.3,39.14
+080607,Canchis,San Pedro,Zona agrícola,1371.5,24.46
+080607,Canchis,San Pedro,Matorral andino,1354.9,24.17
+080607,Canchis,San Pedro,Plantación Forestal,685.8,12.23
+080608,Canchis,Tinta,Pajonal de puna humeda,3103.2,37.85
+080608,Canchis,Tinta,Zona agrícola,2499.7,30.49
+080608,Canchis,Tinta,Matorral andino,2184.5,26.64
+080608,Canchis,Tinta,Plantación Forestal,411.1,5.01
+080701,Chumbivilcas,Santo Tomas,Pajonal de puna seca,75123.2,39.46
+080701,Chumbivilcas,Santo Tomas,Pajonal de puna humeda,59031.8,31.01
+080701,Chumbivilcas,Santo Tomas,Periglaciar,33507.0,17.6
+080701,Chumbivilcas,Santo Tomas,Matorral andino,15835.5,8.32
+080701,Chumbivilcas,Santo Tomas,Zona agrícola,3330.4,1.75
+080701,Chumbivilcas,Santo Tomas,Bofedal,2603.2,1.37
+080701,Chumbivilcas,Santo Tomas,Bosque relicto altoandino (Queñoal y otros),404.7,0.21
+080701,Chumbivilcas,Santo Tomas,Plantación Forestal,386.1,0.2
+080701,Chumbivilcas,Santo Tomas,Lago y laguna,166.2,0.09
+080702,Chumbivilcas,Capacmarca,Pajonal de puna humeda,14799.5,55.23
+080702,Chumbivilcas,Capacmarca,Matorral andino,9000.9,33.59
+080702,Chumbivilcas,Capacmarca,Bofedal,1352.5,5.05
+080702,Chumbivilcas,Capacmarca,Zona agrícola,1170.8,4.37
+080702,Chumbivilcas,Capacmarca,"Bosque estacionalmente seco interandino (Marañón, Mantaro, Pampas y Apurímac)",359.3,1.34
+080702,Chumbivilcas,Capacmarca,Bosque relicto altoandino (Queñoal y otros),111.9,0.42
+080703,Chumbivilcas,Chamaca,Pajonal de puna humeda,44279.6,65.73
+080703,Chumbivilcas,Chamaca,Matorral andino,21587.9,32.05
+080703,Chumbivilcas,Chamaca,Bofedal,1349.2,2.0
+080703,Chumbivilcas,Chamaca,Zona agrícola,140.9,0.21
+080703,Chumbivilcas,Chamaca,Lago y laguna,5.5,0.01
+080704,Chumbivilcas,Colquemarca,Pajonal de puna humeda,20998.0,46.46
+080704,Chumbivilcas,Colquemarca,Matorral andino,19460.5,43.06
+080704,Chumbivilcas,Colquemarca,Zona agrícola,2857.3,6.32
+080704,Chumbivilcas,Colquemarca,Bofedal,1876.9,4.15
+080705,Chumbivilcas,Livitaca,Pajonal de puna humeda,39426.2,52.81
+080705,Chumbivilcas,Livitaca,Matorral andino,19687.1,26.37
+080705,Chumbivilcas,Livitaca,Pajonal de puna seca,9883.2,13.24
+080705,Chumbivilcas,Livitaca,Bofedal,2739.6,3.67
+080705,Chumbivilcas,Livitaca,Zona agrícola,1545.2,2.07
+080705,Chumbivilcas,Livitaca,Periglaciar,1356.7,1.82
+080705,Chumbivilcas,Livitaca,Lago y laguna,22.5,0.03
+080706,Chumbivilcas,Llusco,Pajonal de puna humeda,17643.7,56.06
+080706,Chumbivilcas,Llusco,Pajonal de puna seca,8024.0,25.5
+080706,Chumbivilcas,Llusco,Matorral andino,3349.4,10.64
+080706,Chumbivilcas,Llusco,Zona agrícola,2071.9,6.58
+080706,Chumbivilcas,Llusco,Bofedal,365.4,1.16
+080706,Chumbivilcas,Llusco,Bosque relicto altoandino (Queñoal y otros),17.4,0.06
+080707,Chumbivilcas,Quiñota,Pajonal de puna humeda,13922.5,61.65
+080707,Chumbivilcas,Quiñota,Matorral andino,6050.7,26.79
+080707,Chumbivilcas,Quiñota,Pajonal de puna seca,1547.2,6.85
+080707,Chumbivilcas,Quiñota,Zona agrícola,916.9,4.06
+080707,Chumbivilcas,Quiñota,Bofedal,124.5,0.55
+080707,Chumbivilcas,Quiñota,Periglaciar,23.1,0.1
+080708,Chumbivilcas,Velille,Pajonal de puna humeda,39484.4,51.96
+080708,Chumbivilcas,Velille,Pajonal de puna seca,20716.9,27.26
+080708,Chumbivilcas,Velille,Matorral andino,10965.7,14.43
+080708,Chumbivilcas,Velille,Bofedal,2758.6,3.63
+080708,Chumbivilcas,Velille,Periglaciar,1403.0,1.85
+080708,Chumbivilcas,Velille,Lago y laguna,343.5,0.45
+080708,Chumbivilcas,Velille,Zona agrícola,317.1,0.42
+080801,Espinar,Espinar,Pajonal de puna seca,44909.1,62.96
+080801,Espinar,Espinar,Matorral andino,15638.7,21.92
+080801,Espinar,Espinar,Periglaciar,5389.0,7.56
+080801,Espinar,Espinar,Zona agrícola,4687.9,6.57
+080801,Espinar,Espinar,Bofedal,692.9,0.97
+080801,Espinar,Espinar,Lago y laguna,11.1,0.02
+080802,Espinar,Condoroma,Pajonal de puna seca,28615.8,55.5
+080802,Espinar,Condoroma,Periglaciar,20058.3,38.91
+080802,Espinar,Condoroma,Lago y laguna,1670.1,3.24
+080802,Espinar,Condoroma,Bofedal,1212.7,2.35
+080803,Espinar,Coporaque,Pajonal de puna seca,102613.8,66.48
+080803,Espinar,Coporaque,Pajonal de puna humeda,22487.7,14.57
+080803,Espinar,Coporaque,Zona agrícola,13779.8,8.93
+080803,Espinar,Coporaque,Matorral andino,7670.1,4.97
+080803,Espinar,Coporaque,Periglaciar,4652.1,3.01
+080803,Espinar,Coporaque,Bofedal,3100.8,2.01
+080803,Espinar,Coporaque,Lago y laguna,39.0,0.03
+080803,Espinar,Coporaque,Bosque relicto altoandino (Queñoal y otros),2.1,0.0
+080804,Espinar,Ocoruro,Pajonal de puna seca,28645.5,79.78
+080804,Espinar,Ocoruro,Pajonal de puna humeda,3741.7,10.42
+080804,Espinar,Ocoruro,Periglaciar,2786.2,7.76
+080804,Espinar,Ocoruro,Bofedal,360.2,1.0
+080804,Espinar,Ocoruro,Matorral andino,343.9,0.96
+080804,Espinar,Ocoruro,Lago y laguna,26.1,0.07
+080805,Espinar,Pallpata,Pajonal de puna humeda,62831.2,76.87
+080805,Espinar,Pallpata,Pajonal de puna seca,9738.8,11.92
+080805,Espinar,Pallpata,Bofedal,4025.7,4.93
+080805,Espinar,Pallpata,Matorral andino,3611.5,4.42
+080805,Espinar,Pallpata,Periglaciar,1010.4,1.24
+080805,Espinar,Pallpata,Lago y laguna,479.6,0.59
+080805,Espinar,Pallpata,Zona agrícola,36.0,0.04
+080806,Espinar,Pichigua,Pajonal de puna humeda,20523.1,74.94
+080806,Espinar,Pichigua,Matorral andino,6567.5,23.98
+080806,Espinar,Pichigua,Bofedal,282.2,1.03
+080806,Espinar,Pichigua,Zona agrícola,9.3,0.03
+080806,Espinar,Pichigua,Lago y laguna,5.4,0.02
+080807,Espinar,Suyckutambo,Pajonal de puna seca,53955.7,86.08
+080807,Espinar,Suyckutambo,Periglaciar,6910.2,11.02
+080807,Espinar,Suyckutambo,Bofedal,1209.3,1.93
+080807,Espinar,Suyckutambo,Bosque relicto altoandino (Queñoal y otros),411.1,0.66
+080807,Espinar,Suyckutambo,Lago y laguna,169.3,0.27
+080807,Espinar,Suyckutambo,Matorral andino,25.9,0.04
+080808,Espinar,Alto Pichigua,Pajonal de puna humeda,28621.1,79.68
+080808,Espinar,Alto Pichigua,Matorral andino,5991.2,16.68
+080808,Espinar,Alto Pichigua,Bofedal,1264.3,3.52
+080808,Espinar,Alto Pichigua,Lago y laguna,43.6,0.12
+080901,La Convención,Santa Ana,Vegetación Secundaria,16731.8,43.18
+080901,La Convención,Santa Ana,Bosque altimontano (Pluvial) de Yunga,11037.5,28.49
+080901,La Convención,Santa Ana,Bosque montano de Yunga,7797.8,20.12
+080901,La Convención,Santa Ana,Pajonal de puna humeda,1107.1,2.86
+080901,La Convención,Santa Ana,Río,1032.1,2.66
+080901,La Convención,Santa Ana,"Bosque estacionalmente seco oriental (Huallaga, Ene - Perené, Urubamba)",725.4,1.87
+080901,La Convención,Santa Ana,Bosque basimontano de Yunga,311.1,0.8
+080901,La Convención,Santa Ana,Lago y laguna,4.6,0.01
+080902,La Convención,Echarate,Bosque montano de Yunga,412767.1,39.76
+080902,La Convención,Echarate,Bosque basimontano de Yunga,318366.7,30.66
+080902,La Convención,Echarate,Bosque altimontano (Pluvial) de Yunga,168974.2,16.27
+080902,La Convención,Echarate,Vegetación Secundaria,78623.0,7.57
+080902,La Convención,Echarate,Bosque de colina alta,27493.2,2.65
+080902,La Convención,Echarate,Pajonal de puna humeda,12005.7,1.16
+080902,La Convención,Echarate,"Bosque estacionalmente seco oriental (Huallaga, Ene - Perené, Urubamba)",9404.1,0.91
+080902,La Convención,Echarate,Río,7341.8,0.71
+080902,La Convención,Echarate,Matorral andino,1520.8,0.15
+080902,La Convención,Echarate,Zona agrícola,1276.1,0.12
+080902,La Convención,Echarate,Bosque de terraza no inundable,428.9,0.04
+080902,La Convención,Echarate,Pacales,62.7,0.01
+080902,La Convención,Echarate,Lago y laguna,11.7,0.0
+080903,La Convención,Huayopata,Bosque altimontano (Pluvial) de Yunga,19759.7,37.32
+080903,La Convención,Huayopata,Pajonal de puna humeda,13454.6,25.41
+080903,La Convención,Huayopata,Bosque montano de Yunga,8950.8,16.9
+080903,La Convención,Huayopata,Vegetación Secundaria,7443.5,14.06
+080903,La Convención,Huayopata,Periglaciar,1386.0,2.62
+080903,La Convención,Huayopata,Río,837.0,1.58
+080903,La Convención,Huayopata,Bosque basimontano de Yunga,548.2,1.04
+080903,La Convención,Huayopata,Glaciar,499.6,0.94
+080903,La Convención,Huayopata,Lago y laguna,53.7,0.1
+080903,La Convención,Huayopata,Zona agrícola,12.9,0.02
+080903,La Convención,Huayopata,Bosque relicto mesoandino,4.3,0.01
+080903,La Convención,Huayopata,"Bosque estacionalmente seco oriental (Huallaga, Ene - Perené, Urubamba)",0.4,0.0
+080904,La Convención,Maranura,Vegetación Secundaria,7001.5,42.68
+080904,La Convención,Maranura,Bosque altimontano (Pluvial) de Yunga,3693.2,22.51
+080904,La Convención,Maranura,Bosque montano de Yunga,3301.3,20.12
+080904,La Convención,Maranura,"Bosque estacionalmente seco oriental (Huallaga, Ene - Perené, Urubamba)",869.4,5.3
+080904,La Convención,Maranura,Río,640.5,3.9
+080904,La Convención,Maranura,Pajonal de puna humeda,608.7,3.71
+080904,La Convención,Maranura,Bosque basimontano de Yunga,289.8,1.77
+080905,La Convención,Ocobamba,Pajonal de puna humeda,25790.0,29.89
+080905,La Convención,Ocobamba,Bosque altimontano (Pluvial) de Yunga,24882.5,28.84
+080905,La Convención,Ocobamba,Vegetación Secundaria,18509.4,21.45
+080905,La Convención,Ocobamba,Bosque montano de Yunga,14134.6,16.38
+080905,La Convención,Ocobamba,Periglaciar,1053.8,1.22
+080905,La Convención,Ocobamba,Río,942.0,1.09
+080905,La Convención,Ocobamba,Bosque basimontano de Yunga,619.9,0.72
+080905,La Convención,Ocobamba,"Bosque estacionalmente seco oriental (Huallaga, Ene - Perené, Urubamba)",176.3,0.2
+080905,La Convención,Ocobamba,Glaciar,133.7,0.15
+080905,La Convención,Ocobamba,Lago y laguna,19.3,0.02
+080905,La Convención,Ocobamba,Zona agrícola,12.9,0.01
+080906,La Convención,Quellouno,Bosque montano de Yunga,68999.2,35.14
+080906,La Convención,Quellouno,Vegetación Secundaria,48520.3,24.71
+080906,La Convención,Quellouno,Bosque basimontano de Yunga,35546.1,18.1
+080906,La Convención,Quellouno,Bosque altimontano (Pluvial) de Yunga,35015.5,17.83
+080906,La Convención,Quellouno,Río,2784.3,1.42
+080906,La Convención,Quellouno,Bosque de colina alta,2691.1,1.37
+080906,La Convención,Quellouno,"Bosque estacionalmente seco oriental (Huallaga, Ene - Perené, Urubamba)",2002.6,1.02
+080906,La Convención,Quellouno,Pajonal de puna humeda,796.7,0.41
+080906,La Convención,Quellouno,Zona agrícola,1.8,0.0
+080907,La Convención,Kimbiri,Bosque montano de Yunga,26239.5,33.77
+080907,La Convención,Kimbiri,Bosque altimontano (Pluvial) de Yunga,24884.5,32.03
+080907,La Convención,Kimbiri,Bosque basimontano de Yunga,17278.1,22.24
+080907,La Convención,Kimbiri,Vegetación Secundaria,4301.7,5.54
+080907,La Convención,Kimbiri,Bosque de colina alta,1771.8,2.28
+080907,La Convención,Kimbiri,Bosque de terraza no inundable,1638.7,2.11
+080907,La Convención,Kimbiri,Zona agrícola,861.8,1.11
+080907,La Convención,Kimbiri,Río,609.2,0.78
+080907,La Convención,Kimbiri,Isla,83.2,0.11
+080907,La Convención,Kimbiri,Bosque aluvial inundable,28.6,0.04
+080908,La Convención,Santa Teresa,Pajonal de puna humeda,50086.4,37.67
+080908,La Convención,Santa Teresa,Bosque altimontano (Pluvial) de Yunga,27951.3,21.02
+080908,La Convención,Santa Teresa,Vegetación Secundaria,25328.5,19.05
+080908,La Convención,Santa Teresa,Periglaciar,14887.5,11.2
+080908,La Convención,Santa Teresa,Glaciar,6272.4,4.72
+080908,La Convención,Santa Teresa,Bosque montano de Yunga,4879.4,3.67
+080908,La Convención,Santa Teresa,"Bosque estacionalmente seco interandino (Marañón, Mantaro, Pampas y Apurímac)",1415.3,1.06
+080908,La Convención,Santa Teresa,Río,1095.9,0.82
+080908,La Convención,Santa Teresa,Matorral andino,621.6,0.47
+080908,La Convención,Santa Teresa,Bosque relicto altoandino (Queñoal y otros),183.0,0.14
+080908,La Convención,Santa Teresa,Lago y laguna,151.1,0.11
+080908,La Convención,Santa Teresa,Bosque basimontano de Yunga,78.3,0.06
+080908,La Convención,Santa Teresa,"Bosque estacionalmente seco oriental (Huallaga, Ene - Perené, Urubamba)",5.2,0.0
+080909,La Convención,Vilcabamba,Pajonal de puna humeda,70692.6,30.43
+080909,La Convención,Vilcabamba,Bosque altimontano (Pluvial) de Yunga,60273.7,25.94
+080909,La Convención,Vilcabamba,Bosque montano de Yunga,45928.2,19.77
+080909,La Convención,Vilcabamba,Vegetación Secundaria,29345.4,12.63
+080909,La Convención,Vilcabamba,Bosque basimontano de Yunga,11007.2,4.74
+080909,La Convención,Vilcabamba,Periglaciar,9940.3,4.28
+080909,La Convención,Vilcabamba,Glaciar,1615.3,0.7
+080909,La Convención,Vilcabamba,"Bosque estacionalmente seco interandino (Marañón, Mantaro, Pampas y Apurímac)",1441.7,0.62
+080909,La Convención,Vilcabamba,Río,964.0,0.41
+080909,La Convención,Vilcabamba,Bosque relicto altoandino (Queñoal y otros),492.4,0.21
+080909,La Convención,Vilcabamba,Matorral andino,366.4,0.16
+080909,La Convención,Vilcabamba,Lago y laguna,100.0,0.04
+080909,La Convención,Vilcabamba,Bofedal,70.6,0.03
+080909,La Convención,Vilcabamba,Zona agrícola,60.4,0.03
+080909,La Convención,Vilcabamba,"Bosque estacionalmente seco oriental (Huallaga, Ene - Perené, Urubamba)",32.3,0.01
+080909,La Convención,Vilcabamba,Bosque de terraza no inundable,11.5,0.0
+080910,La Convención,Pichari,Bosque montano de Yunga,25571.9,31.43
+080910,La Convención,Pichari,Bosque basimontano de Yunga,21159.2,26.0
+080910,La Convención,Pichari,Bosque altimontano (Pluvial) de Yunga,17564.7,21.59
+080910,La Convención,Pichari,Vegetación Secundaria,6277.8,7.71
+080910,La Convención,Pichari,Bosque de colina alta,4406.9,5.42
+080910,La Convención,Pichari,Bosque de terraza no inundable,2183.4,2.68
+080910,La Convención,Pichari,Zona agrícola,2047.4,2.52
+080910,La Convención,Pichari,Río,1667.8,2.05
+080910,La Convención,Pichari,Isla,300.7,0.37
+080910,La Convención,Pichari,Bosque aluvial inundable,194.3,0.24
+080911,La Convención,Inkawasi,Bosque altimontano (Pluvial) de Yunga,19094.4,24.5
+080911,La Convención,Inkawasi,Pajonal de puna humeda,16117.2,20.68
+080911,La Convención,Inkawasi,Vegetación Secundaria,14970.9,19.21
+080911,La Convención,Inkawasi,Bosque montano de Yunga,9294.1,11.93
+080911,La Convención,Inkawasi,"Bosque estacionalmente seco interandino (Marañón, Mantaro, Pampas y Apurímac)",7462.1,9.58
+080911,La Convención,Inkawasi,Periglaciar,4507.4,5.78
+080911,La Convención,Inkawasi,Matorral andino,4330.4,5.56
+080911,La Convención,Inkawasi,Bosque basimontano de Yunga,1386.0,1.78
+080911,La Convención,Inkawasi,Glaciar,525.7,0.67
+080911,La Convención,Inkawasi,Río,238.2,0.31
+080911,La Convención,Inkawasi,Lago y laguna,3.5,0.0
+080911,La Convención,Inkawasi,Zona agrícola,0.2,0.0
+080912,La Convención,Villa Virgen,Bosque altimontano (Pluvial) de Yunga,19846.5,45.48
+080912,La Convención,Villa Virgen,Bosque montano de Yunga,15572.6,35.68
+080912,La Convención,Villa Virgen,Bosque basimontano de Yunga,5915.8,13.56
+080912,La Convención,Villa Virgen,Vegetación Secundaria,1106.6,2.54
+080912,La Convención,Villa Virgen,Pajonal de puna humeda,656.9,1.51
+080912,La Convención,Villa Virgen,Bosque de terraza no inundable,307.3,0.7
+080912,La Convención,Villa Virgen,Río,232.8,0.53
+080912,La Convención,Villa Virgen,Zona agrícola,1.8,0.0
+080913,La Convención,Villa Kintiarina,Bosque montano de Yunga,11726.4,55.64
+080913,La Convención,Villa Kintiarina,Bosque basimontano de Yunga,7897.4,37.47
+080913,La Convención,Villa Kintiarina,Vegetación Secundaria,727.2,3.45
+080913,La Convención,Villa Kintiarina,Río,309.6,1.47
+080913,La Convención,Villa Kintiarina,Bosque altimontano (Pluvial) de Yunga,298.6,1.42
+080913,La Convención,Villa Kintiarina,Bosque de terraza no inundable,105.5,0.5
+080913,La Convención,Villa Kintiarina,Zona agrícola,12.4,0.06
+080914,La Convención,Megantoni,Bosque de colina baja,385942.3,35.45
+080914,La Convención,Megantoni,Bosque de colina alta,366563.1,33.67
+080914,La Convención,Megantoni,Bosque basimontano de Yunga,131916.3,12.12
+080914,La Convención,Megantoni,Bosque aluvial inundable,82035.0,7.53
+080914,La Convención,Megantoni,Bosque de terraza no inundable,44264.1,4.07
+080914,La Convención,Megantoni,Bosque montano de Yunga,28183.4,2.59
+080914,La Convención,Megantoni,Río,20489.2,1.88
+080914,La Convención,Megantoni,Pacales,19617.5,1.8
+080914,La Convención,Megantoni,Vegetación Secundaria,8960.3,0.82
+080914,La Convención,Megantoni,Isla,688.1,0.06
+080914,La Convención,Megantoni,Zona agrícola,129.0,0.01
+081001,Paruro,Paruro,Matorral andino,6154.2,40.31
+081001,Paruro,Paruro,Pajonal de puna humeda,5622.9,36.83
+081001,Paruro,Paruro,Zona agrícola,2803.8,18.36
+081001,Paruro,Paruro,Plantación Forestal,686.6,4.5
+081002,Paruro,Accha,Matorral andino,11431.9,47.93
+081002,Paruro,Accha,Pajonal de puna humeda,9213.2,38.63
+081002,Paruro,Accha,Zona agrícola,2249.3,9.43
+081002,Paruro,Accha,Bosque relicto altoandino (Queñoal y otros),711.1,2.98
+081002,Paruro,Accha,Bofedal,98.7,0.41
+081002,Paruro,Accha,Plantación Forestal,89.0,0.37
+081002,Paruro,Accha,"Bosque estacionalmente seco interandino (Marañón, Mantaro, Pampas y Apurímac)",59.4,0.25
+081003,Paruro,Ccapi,Matorral andino,15968.5,49.1
+081003,Paruro,Ccapi,Pajonal de puna humeda,9700.6,29.83
+081003,Paruro,Ccapi,Zona agrícola,3345.3,10.29
+081003,Paruro,Ccapi,"Bosque estacionalmente seco interandino (Marañón, Mantaro, Pampas y Apurímac)",2893.0,8.89
+081003,Paruro,Ccapi,Bosque relicto altoandino (Queñoal y otros),587.0,1.8
+081003,Paruro,Ccapi,Lago y laguna,24.1,0.07
+081003,Paruro,Ccapi,Río,5.6,0.02
+081004,Paruro,Colcha,Matorral andino,10228.7,73.23
+081004,Paruro,Colcha,Pajonal de puna humeda,2580.8,18.48
+081004,Paruro,Colcha,"Bosque estacionalmente seco interandino (Marañón, Mantaro, Pampas y Apurímac)",591.1,4.23
+081004,Paruro,Colcha,Bosque relicto altoandino (Queñoal y otros),209.0,1.5
+081004,Paruro,Colcha,Zona agrícola,182.3,1.31
+081004,Paruro,Colcha,Plantación Forestal,175.7,1.26
+081005,Paruro,Huanoquite,Matorral andino,15885.8,44.05
+081005,Paruro,Huanoquite,Pajonal de puna humeda,13294.6,36.86
+081005,Paruro,Huanoquite,Zona agrícola,5082.4,14.09
+081005,Paruro,Huanoquite,"Bosque estacionalmente seco interandino (Marañón, Mantaro, Pampas y Apurímac)",1709.5,4.74
+081005,Paruro,Huanoquite,Bofedal,35.2,0.1
+081005,Paruro,Huanoquite,Bosque relicto altoandino (Queñoal y otros),24.5,0.07
+081005,Paruro,Huanoquite,Río,18.2,0.05
+081005,Paruro,Huanoquite,Lago y laguna,16.0,0.04
+081006,Paruro,Omacha,Pajonal de puna humeda,26588.8,62.18
+081006,Paruro,Omacha,Matorral andino,15222.2,35.6
+081006,Paruro,Omacha,Zona agrícola,458.5,1.07
+081006,Paruro,Omacha,Bofedal,401.0,0.94
+081006,Paruro,Omacha,Plantación Forestal,63.5,0.15
+081006,Paruro,Omacha,Lago y laguna,27.7,0.06
+081007,Paruro,Paccaritambo,Matorral andino,10485.7,73.74
+081007,Paruro,Paccaritambo,Pajonal de puna humeda,1784.7,12.55
+081007,Paruro,Paccaritambo,Zona agrícola,1228.1,8.64
+081007,Paruro,Paccaritambo,Plantación Forestal,459.5,3.23
+081007,Paruro,Paccaritambo,"Bosque estacionalmente seco interandino (Marañón, Mantaro, Pampas y Apurímac)",262.3,1.84
+081008,Paruro,Pillpinto,Matorral andino,4473.8,57.05
+081008,Paruro,Pillpinto,Pajonal de puna humeda,2647.9,33.77
+081008,Paruro,Pillpinto,Zona agrícola,719.8,9.18
+081009,Paruro,Yaurisque,Matorral andino,5442.9,53.97
+081009,Paruro,Yaurisque,Pajonal de puna humeda,3327.2,32.99
+081009,Paruro,Yaurisque,Zona agrícola,1090.2,10.81
+081009,Paruro,Yaurisque,Plantación Forestal,224.0,2.22
+081101,Paucartambo,Paucartambo,Pajonal de puna humeda,53008.6,48.58
+081101,Paucartambo,Paucartambo,Bosque altimontano (Pluvial) de Yunga,29016.3,26.59
+081101,Paucartambo,Paucartambo,Bosque montano de Yunga,13730.9,12.58
+081101,Paucartambo,Paucartambo,Matorral andino,6012.5,5.51
+081101,Paucartambo,Paucartambo,Zona agrícola,2565.2,2.35
+081101,Paucartambo,Paucartambo,Vegetación Secundaria,2368.2,2.17
+081101,Paucartambo,Paucartambo,Bosque basimontano de Yunga,1467.8,1.35
+081101,Paucartambo,Paucartambo,Periglaciar,600.0,0.55
+081101,Paucartambo,Paucartambo,Río,356.8,0.33
+081102,Paucartambo,Caicay,Pajonal de puna humeda,5042.5,47.5
+081102,Paucartambo,Caicay,Matorral andino,3758.7,35.41
+081102,Paucartambo,Caicay,Zona agrícola,1638.1,15.43
+081102,Paucartambo,Caicay,Bofedal,176.1,1.66
+081103,Paucartambo,Challabamba,Pajonal de puna humeda,44049.9,68.72
+081103,Paucartambo,Challabamba,Bosque altimontano (Pluvial) de Yunga,13506.8,21.07
+081103,Paucartambo,Challabamba,Matorral andino,3154.6,4.92
+081103,Paucartambo,Challabamba,Vegetación Secundaria,2449.7,3.82
+081103,Paucartambo,Challabamba,Río,411.0,0.64
+081103,Paucartambo,Challabamba,Periglaciar,363.4,0.57
+081103,Paucartambo,Challabamba,Zona agrícola,126.2,0.2
+081103,Paucartambo,Challabamba,Bosque montano de Yunga,37.4,0.06
+081104,Paucartambo,Colquepata,Pajonal de puna humeda,22284.3,48.55
+081104,Paucartambo,Colquepata,Matorral andino,15910.2,34.67
+081104,Paucartambo,Colquepata,Zona agrícola,6616.0,14.41
+081104,Paucartambo,Colquepata,Bofedal,874.0,1.9
+081104,Paucartambo,Colquepata,Bosque altimontano (Pluvial) de Yunga,181.3,0.4
+081104,Paucartambo,Colquepata,Lago y laguna,30.8,0.07
+081105,Paucartambo,Huancarani,Pajonal de puna humeda,5862.3,40.3
+081105,Paucartambo,Huancarani,Matorral andino,5354.1,36.8
+081105,Paucartambo,Huancarani,Zona agrícola,3278.1,22.53
+081105,Paucartambo,Huancarani,Bofedal,53.5,0.37
+081106,Paucartambo,Kosñipata,Bosque basimontano de Yunga,85811.6,26.27
+081106,Paucartambo,Kosñipata,Bosque montano de Yunga,81324.9,24.9
+081106,Paucartambo,Kosñipata,Bosque altimontano (Pluvial) de Yunga,59648.3,18.26
+081106,Paucartambo,Kosñipata,Pajonal de puna humeda,40055.2,12.26
+081106,Paucartambo,Kosñipata,Bosque de terraza no inundable,14220.5,4.35
+081106,Paucartambo,Kosñipata,Bosque de colina baja,13843.5,4.24
+081106,Paucartambo,Kosñipata,Vegetación Secundaria,10121.9,3.1
+081106,Paucartambo,Kosñipata,Bosque de colina alta,9093.2,2.78
+081106,Paucartambo,Kosñipata,Río,6701.8,2.05
+081106,Paucartambo,Kosñipata,Periglaciar,4398.9,1.35
+081106,Paucartambo,Kosñipata,Matorral andino,634.0,0.19
+081106,Paucartambo,Kosñipata,Glaciar,547.1,0.17
+081106,Paucartambo,Kosñipata,Zona agrícola,126.1,0.04
+081106,Paucartambo,Kosñipata,Bofedal,41.8,0.01
+081106,Paucartambo,Kosñipata,Lago y laguna,37.4,0.01
+081106,Paucartambo,Kosñipata,Isla,0.1,0.0
+081201,Quispicanchi,Urcos,Zona agrícola,5159.6,36.77
+081201,Quispicanchi,Urcos,Pajonal de puna humeda,4704.8,33.53
+081201,Quispicanchi,Urcos,Matorral andino,2985.3,21.28
+081201,Quispicanchi,Urcos,Plantación Forestal,1144.4,8.16
+081201,Quispicanchi,Urcos,Bofedal,21.8,0.16
+081201,Quispicanchi,Urcos,Lago y laguna,15.1,0.11
+081202,Quispicanchi,Andahuaylillas,Matorral andino,4988.7,58.23
+081202,Quispicanchi,Andahuaylillas,Pajonal de puna humeda,1723.6,20.12
+081202,Quispicanchi,Andahuaylillas,Zona agrícola,1404.4,16.39
+081202,Quispicanchi,Andahuaylillas,Plantación Forestal,409.5,4.78
+081202,Quispicanchi,Andahuaylillas,Bofedal,41.5,0.48
+081203,Quispicanchi,Camanti,Bosque basimontano de Yunga,136819.2,40.72
+081203,Quispicanchi,Camanti,Pajonal de puna humeda,56933.0,16.94
+081203,Quispicanchi,Camanti,Bosque montano de Yunga,53654.8,15.97
+081203,Quispicanchi,Camanti,Bosque altimontano (Pluvial) de Yunga,34048.7,10.13
+081203,Quispicanchi,Camanti,Bosque de colina alta,30093.7,8.96
+081203,Quispicanchi,Camanti,Bosque de terraza no inundable,14488.5,4.31
+081203,Quispicanchi,Camanti,Periglaciar,3492.9,1.04
+081203,Quispicanchi,Camanti,Río,3397.7,1.01
+081203,Quispicanchi,Camanti,Vegetación Secundaria,1338.4,0.4
+081203,Quispicanchi,Camanti,Matorral andino,1009.8,0.3
+081203,Quispicanchi,Camanti,Lago y laguna,266.8,0.08
+081203,Quispicanchi,Camanti,Glaciar,238.0,0.07
+081203,Quispicanchi,Camanti,Isla,134.6,0.04
+081203,Quispicanchi,Camanti,Bofedal,58.7,0.02
+081203,Quispicanchi,Camanti,Bosque aluvial inundable,17.7,0.01
+081203,Quispicanchi,Camanti,Zona agrícola,15.9,0.0
+081204,Quispicanchi,Ccarhuayo,Pajonal de puna humeda,20366.8,67.11
+081204,Quispicanchi,Ccarhuayo,Matorral andino,4702.4,15.5
+081204,Quispicanchi,Ccarhuayo,Periglaciar,3768.5,12.42
+081204,Quispicanchi,Ccarhuayo,Zona agrícola,826.8,2.72
+081204,Quispicanchi,Ccarhuayo,Glaciar,641.9,2.12
+081204,Quispicanchi,Ccarhuayo,Lago y laguna,40.5,0.13
+081205,Quispicanchi,Ccatca,Pajonal de puna humeda,11929.8,40.23
+081205,Quispicanchi,Ccatca,Matorral andino,9144.7,30.84
+081205,Quispicanchi,Ccatca,Zona agrícola,8397.1,28.31
+081205,Quispicanchi,Ccatca,Bofedal,185.2,0.62
+081206,Quispicanchi,Cusipata,Pajonal de puna humeda,14805.1,60.9
+081206,Quispicanchi,Cusipata,Matorral andino,2841.7,11.69
+081206,Quispicanchi,Cusipata,Periglaciar,2797.8,11.51
+081206,Quispicanchi,Cusipata,Zona agrícola,2401.5,9.88
+081206,Quispicanchi,Cusipata,Bofedal,706.3,2.91
+081206,Quispicanchi,Cusipata,Plantación Forestal,552.8,2.27
+081206,Quispicanchi,Cusipata,Glaciar,203.7,0.84
+081207,Quispicanchi,Huaro,Pajonal de puna humeda,7982.9,73.41
+081207,Quispicanchi,Huaro,Zona agrícola,1610.1,14.81
+081207,Quispicanchi,Huaro,Matorral andino,923.9,8.5
+081207,Quispicanchi,Huaro,Bofedal,294.3,2.71
+081207,Quispicanchi,Huaro,Plantación Forestal,59.5,0.55
+081207,Quispicanchi,Huaro,Lago y laguna,4.2,0.04
+081208,Quispicanchi,Lucre,Matorral andino,6183.1,52.59
+081208,Quispicanchi,Lucre,Pajonal de puna humeda,4858.1,41.32
+081208,Quispicanchi,Lucre,Zona agrícola,652.1,5.55
+081208,Quispicanchi,Lucre,Lago y laguna,63.5,0.54
+081209,Quispicanchi,Marcapata,Pajonal de puna humeda,63064.4,48.52
+081209,Quispicanchi,Marcapata,Periglaciar,35761.4,27.51
+081209,Quispicanchi,Marcapata,Bosque altimontano (Pluvial) de Yunga,13988.3,10.76
+081209,Quispicanchi,Marcapata,Glaciar,6220.1,4.79
+081209,Quispicanchi,Marcapata,Bosque montano de Yunga,4524.0,3.48
+081209,Quispicanchi,Marcapata,Vegetación Secundaria,4370.3,3.36
+081209,Quispicanchi,Marcapata,Bofedal,1744.5,1.34
+081209,Quispicanchi,Marcapata,Lago y laguna,162.9,0.13
+081209,Quispicanchi,Marcapata,Bosque basimontano de Yunga,140.3,0.11
+081210,Quispicanchi,Ocongate,Pajonal de puna humeda,50241.5,52.99
+081210,Quispicanchi,Ocongate,Periglaciar,18511.0,19.52
+081210,Quispicanchi,Ocongate,Zona agrícola,8372.6,8.83
+081210,Quispicanchi,Ocongate,Glaciar,7148.7,7.54
+081210,Quispicanchi,Ocongate,Matorral andino,6086.2,6.42
+081210,Quispicanchi,Ocongate,Bofedal,3935.8,4.15
+081210,Quispicanchi,Ocongate,Lago y laguna,522.8,0.55
+081211,Quispicanchi,Oropesa,Matorral andino,3707.0,47.36
+081211,Quispicanchi,Oropesa,Pajonal de puna humeda,2247.9,28.72
+081211,Quispicanchi,Oropesa,Zona agrícola,1829.4,23.37
+081211,Quispicanchi,Oropesa,Bofedal,43.5,0.56
+081212,Quispicanchi,Quiquijana,Pajonal de puna humeda,22623.1,62.22
+081212,Quispicanchi,Quiquijana,Matorral andino,6505.6,17.89
+081212,Quispicanchi,Quiquijana,Zona agrícola,5704.3,15.69
+081212,Quispicanchi,Quiquijana,Plantación Forestal,846.5,2.33
+081212,Quispicanchi,Quiquijana,Bofedal,637.2,1.75
+081212,Quispicanchi,Quiquijana,Lago y laguna,44.6,0.12
+081301,Urubamba,Urubamba,Pajonal de puna humeda,6563.6,41.29
+081301,Urubamba,Urubamba,Matorral andino,4079.9,25.67
+081301,Urubamba,Urubamba,Zona agrícola,2323.2,14.62
+081301,Urubamba,Urubamba,Periglaciar,2163.1,13.61
+081301,Urubamba,Urubamba,Bosque relicto altoandino (Queñoal y otros),537.2,3.38
+081301,Urubamba,Urubamba,Glaciar,205.3,1.29
+081301,Urubamba,Urubamba,Lago y laguna,23.2,0.15
+081302,Urubamba,Chinchero,Zona agrícola,6585.8,64.45
+081302,Urubamba,Chinchero,Pajonal de puna humeda,2499.3,24.46
+081302,Urubamba,Chinchero,Matorral andino,717.6,7.02
+081302,Urubamba,Chinchero,Lago y laguna,316.5,3.1
+081302,Urubamba,Chinchero,Plantación Forestal,99.0,0.97
+081303,Urubamba,Huayllabamba,Matorral andino,4310.3,56.64
+081303,Urubamba,Huayllabamba,Zona agrícola,2132.8,28.03
+081303,Urubamba,Huayllabamba,Pajonal de puna humeda,978.9,12.86
+081303,Urubamba,Huayllabamba,Bosque relicto altoandino (Queñoal y otros),126.5,1.66
+081303,Urubamba,Huayllabamba,Plantación Forestal,54.7,0.72
+081303,Urubamba,Huayllabamba,Periglaciar,6.6,0.09
+081304,Urubamba,Machupicchu,Pajonal de puna humeda,11855.6,32.91
+081304,Urubamba,Machupicchu,Bosque altimontano (Pluvial) de Yunga,11370.0,31.56
+081304,Urubamba,Machupicchu,Vegetación Secundaria,5005.0,13.89
+081304,Urubamba,Machupicchu,Periglaciar,2653.4,7.37
+081304,Urubamba,Machupicchu,Bosque montano de Yunga,2558.7,7.1
+081304,Urubamba,Machupicchu,Matorral andino,1182.4,3.28
+081304,Urubamba,Machupicchu,Río,554.8,1.54
+081304,Urubamba,Machupicchu,Glaciar,417.8,1.16
+081304,Urubamba,Machupicchu,Zona agrícola,253.5,0.7
+081304,Urubamba,Machupicchu,Bofedal,112.6,0.31
+081304,Urubamba,Machupicchu,Bosque relicto altoandino (Queñoal y otros),57.3,0.16
+081305,Urubamba,Maras,Zona agrícola,10600.6,74.9
+081305,Urubamba,Maras,Matorral andino,3526.3,24.92
+081305,Urubamba,Maras,Plantación Forestal,26.2,0.18
+081306,Urubamba,Ollantaytambo,Pajonal de puna humeda,30458.2,52.58
+081306,Urubamba,Ollantaytambo,Matorral andino,14437.8,24.92
+081306,Urubamba,Ollantaytambo,Periglaciar,8146.0,14.06
+081306,Urubamba,Ollantaytambo,Zona agrícola,2513.9,4.34
+081306,Urubamba,Ollantaytambo,Bofedal,1082.8,1.87
+081306,Urubamba,Ollantaytambo,Glaciar,839.1,1.45
+081306,Urubamba,Ollantaytambo,Bosque altimontano (Pluvial) de Yunga,226.2,0.39
+081306,Urubamba,Ollantaytambo,Bosque relicto altoandino (Queñoal y otros),192.5,0.33
+081306,Urubamba,Ollantaytambo,Bosque relicto mesoandino,27.6,0.05
+081306,Urubamba,Ollantaytambo,Plantación Forestal,6.5,0.01
+081307,Urubamba,Yucay,Matorral andino,874.1,37.35
+081307,Urubamba,Yucay,Pajonal de puna humeda,753.0,32.18
+081307,Urubamba,Yucay,Zona agrícola,496.3,21.21
+081307,Urubamba,Yucay,Bosque relicto altoandino (Queñoal y otros),102.4,4.38
+081307,Urubamba,Yucay,Periglaciar,95.4,4.08
+081307,Urubamba,Yucay,Glaciar,18.9,0.81
