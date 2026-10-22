@@ -1,0 +1,2 @@
+# observatorio_incendios_forestales_2026
+Observatorio de Incendios Forestales Cusco 2026
