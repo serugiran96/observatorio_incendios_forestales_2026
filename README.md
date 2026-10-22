@@ -41,7 +41,8 @@ Ver [`docs/plan_de_trabajo.md`](docs/plan_de_trabajo.md).
 ├── src/observatorio/       # Funciones reutilizables
 │   ├── config.py           #   rutas, fecha de corte, sistemas de referencia
 │   ├── esquemas.py         #   columnas, vocabularios y reglas de coherencia
-│   └── evidencias.py       #   carga y validación del registro
+│   ├── evidencias.py       #   carga, validación y escritura del registro
+│   └── reportes_emergencia.py  # extracción de los reportes de emergencias (PDF)
 ├── scripts/                # Procesos ejecutables (validación, descargas, análisis)
 ├── data/
 │   ├── raw/registro/       # fuentes.csv, evidencias.csv, vacios_informacion.csv (versionados)
@@ -68,11 +69,23 @@ Sin uv: `python3.12 -m venv .venv && source .venv/bin/activate && pip install -r
 
 Si tienes Conda activo, ejecuta antes `conda deactivate` para que no interfiera.
 
+**Si el repositorio está en una carpeta sincronizada con iCloud** (por ejemplo, `~/Documents`), iCloud oculta
+los archivos de `.venv` y Python deja de encontrar el paquete (`ModuleNotFoundError: observatorio`). Crea
+el entorno fuera de la sincronización y enlázalo:
+
+```bash
+UV_PROJECT_ENVIRONMENT=venv.nosync uv sync && ln -s venv.nosync .venv
+```
+
+Ver `docs/decisiones_tecnicas.md` (DT-09).
+
 ## Uso
 
 ```bash
-uv run pytest                              # pruebas
-uv run python scripts/validar_registro.py  # valida fuentes, evidencias y vacíos de información
+uv run pytest                                             # pruebas
+uv run python scripts/validar_registro.py                 # valida fuentes, evidencias y vacíos de información
+uv run python scripts/extraer_reportes_emergencia.py --descargar   # reportes OGRD-Congreso -> registro
+uv run python scripts/indexar_reportes_indeci.py          # índice de reportes COEN-INDECI de Cusco
 ```
 
 El análisis geoespacial (Fase 3) y el dashboard (Fase 4) agregarán sus comandos aquí.

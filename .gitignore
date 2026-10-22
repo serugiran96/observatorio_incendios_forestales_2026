@@ -220,6 +220,8 @@ __marimo__/
 .streamlit/secrets.toml
 
 # --- Observatorio: credenciales, descargas y rásteres ---
+# Entorno virtual real (fuera de la sincronización de iCloud); .venv es un enlace a él
+venv.nosync/
 # Credenciales de Google Cloud / Earth Engine
 .config/earthengine/
 credentials

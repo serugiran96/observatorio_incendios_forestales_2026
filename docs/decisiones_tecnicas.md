@@ -39,3 +39,23 @@ evidencia, lo indica. Los datos ficticios solo existen dentro de `tests/`.
 ### DT-08 · Repositorio público (21-oct-2026)
 El repositorio remoto es público. `.env`, credenciales de Google, descargas pesadas y rásteres están
 excluidos en `.gitignore`. El registro no contiene datos personales (validado automáticamente).
+
+### DT-09 · Entorno virtual fuera de la sincronización de iCloud (21-oct-2026)
+La carpeta `~/Documents` de este equipo se sincroniza con iCloud Drive, que marca como ocultos
+(`chflags hidden`) los archivos dentro de carpetas que empiezan con punto, como `.venv`. Python 3.12.14
+ignora los archivos `.pth` ocultos, lo que rompía la instalación editable del paquete. Además, sincronizar
+miles de archivos del entorno con iCloud es lento y arriesgado. El entorno real vive en `venv.nosync/`
+(iCloud no sincroniza carpetas con sufijo `.nosync`) y `.venv` es un enlace simbólico a él, de modo que
+`uv run` y `uv sync` funcionan sin configuración adicional. Ambos están en `.gitignore`.
+
+### DT-10 · Extracción de reportes PDF por coordenadas (21-oct-2026)
+Los reportes del Congreso presentan las emergencias en tarjetas de varias columnas que se superponen
+en vertical. La extracción de texto plano mezcla columnas, así que cada tarjeta se recorta desde su
+encabezado (detectado sobre la palabra "EVENTO") hasta el encabezado de la siguiente tarjeta de la
+misma columna. El ancho se limita por la columna siguiente. La interpretación de daños nunca inventa
+magnitudes: si no hay cifra, se registra una descripción cualitativa.
+
+### DT-11 · Índice del COEN-INDECI desde el feed RSS (21-oct-2026)
+El listado web de emergencias de INDECI y su API REST no filtran de forma fiable por región y tipo. El
+feed RSS con parámetro de búsqueda sí lo hace y está ordenado por fecha, lo que permite un índice
+reproducible que se detiene al llegar al inicio del periodo.

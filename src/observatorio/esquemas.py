@@ -114,9 +114,11 @@ VARIABLES = {
     # Vivienda e infraestructura
     "viviendas_afectadas": "dano_vivienda_infraestructura",
     "viviendas_destruidas": "dano_vivienda_infraestructura",
+    "viviendas_inhabitables": "dano_vivienda_infraestructura",
     "infraestructura_afectada": "dano_vivienda_infraestructura",
-    # Ambiental
+    # Ambiental ("destruida"/"afectada" siguen la terminología de INDECI; no es área quemada medida)
     "superficie_afectada": "dano_ambiental",
+    "cobertura_natural_destruida": "dano_ambiental",
     "cobertura_natural_afectada": "dano_ambiental",
     "fuentes_agua_afectadas": "dano_ambiental",
     "fauna_afectada": "dano_ambiental",

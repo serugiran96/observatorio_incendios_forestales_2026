@@ -232,7 +232,7 @@ def validar_evidencias(evidencias: pd.DataFrame, fuentes: pd.DataFrame) -> Resul
         _validar_contenido(fila, res)
 
     # Posibles duplicados: misma fuente, lugar, variable, fecha y valor
-    claves = ["id_fuente", "provincia", "distrito", "localidad", "variable", "fecha_evento", "valor"]
+    claves = ["id_fuente", "provincia", "distrito", "localidad", "categoria", "variable", "fecha_evento", "valor"]
     repetidas = evidencias.loc[evidencias.duplicated(claves, keep=False), "id_evidencia"].tolist()
     if repetidas:
         res.advertencias.append(f"posibles evidencias duplicadas: {repetidas}")
@@ -267,3 +267,19 @@ def unir_con_fuentes(evidencias: pd.DataFrame, fuentes: pd.DataFrame) -> pd.Data
     """Añade a cada evidencia los metadatos de su fuente (institución, enlace, fechas, tipo)."""
     metadatos = fuentes[["id_fuente", "institucion", "titulo", "url", "tipo_fuente", "fecha_publicacion", "fecha_consulta"]]
     return evidencias.merge(metadatos, on="id_fuente", how="left", validate="many_to_one")
+
+
+# --- Escritura del registro -----------------------------------------------------
+def reemplazar_por_prefijo(registro: pd.DataFrame, nuevas: pd.DataFrame, columna_id: str, prefijo: str) -> pd.DataFrame:
+    """Sustituye las filas generadas por un proceso automático (identificadas por prefijo).
+
+    Las filas curadas manualmente (otros prefijos) se conservan intactas, de modo que los
+    scripts de extracción pueden ejecutarse de nuevo sin borrar el trabajo manual.
+    """
+    conservadas = registro[~registro[columna_id].str.startswith(prefijo)]
+    combinado = pd.concat([conservadas, nuevas.astype(str)], ignore_index=True)
+    return combinado.sort_values(columna_id, kind="stable").reset_index(drop=True)
+
+
+def guardar_registro(registro: pd.DataFrame, ruta: Path, columnas: tuple[str, ...]) -> None:
+    registro.loc[:, list(columnas)].to_csv(ruta, index=False, encoding="utf-8")
