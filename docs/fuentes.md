@@ -62,6 +62,9 @@ Fecha de consulta: 21 de octubre de 2026.
   - "Abierto al último reporte" significa que el cierre no consta en los reportes indexados.
   - Las cantidades de los anexos de BAH (rubros, pesos) no se leen de forma fiable; solo se registra
     qué rubros se entregaron.
+  - 2 de los 191 reportes indexados no tienen su PDF enlazado en el portal (N.º 14122 Livitaca y
+    N.º 14533 Ccapi); se registran como vacíos V-0015 y V-0016. Resultado final: 189 reportes leídos,
+    179 incendios COEN-INDECI + 2 que solo figuran en las tarjetas OGRD = 181 incendios.
   - Se detectó una errata del propio INDECI: el reporte de Sicuani se publica como N.º 13371 pero el
     PDF dice N.º 13372. Se anota en `fuentes.csv`.
 
