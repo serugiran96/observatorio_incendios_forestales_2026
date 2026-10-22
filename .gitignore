@@ -218,3 +218,24 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Observatorio: credenciales, descargas y rásteres ---
+# Credenciales de Google Cloud / Earth Engine
+.config/earthengine/
+credentials
+client_secret*.json
+service-account*.json
+*-key.json
+*.pem
+# Documentos y capas descargadas (se regeneran con scripts; GADM no es redistribuible)
+data/raw/documentos/*
+!data/raw/documentos/.gitkeep
+data/raw/geodatos/*
+!data/raw/geodatos/.gitkeep
+# Rásteres y comprimidos pesados
+*.tif
+*.tiff
+*.zip
+*.gpkg-journal
+# Sistema operativo
+.DS_Store

@@ -1,0 +1,45 @@
+[project]
+name = "observatorio-incendios-cusco"
+version = "0.1.0"
+description = "Cusco — del incendio a la recuperación: observatorio territorial de incendios forestales (2026)"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    # Datos tabulares y geoespaciales (ruedas binarias, sin compilar GDAL)
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "geopandas>=1.0",
+    "pyogrio>=0.9",
+    "shapely>=2.0",
+    "pyproj>=3.6",
+    # Teledetección (el procesamiento ráster ocurre en los servidores de Earth Engine)
+    "earthengine-api>=1.0",
+    # Dashboard y visualización
+    "streamlit>=1.40",
+    "plotly>=5.24",
+    "folium>=0.18",
+    "streamlit-folium>=0.23",
+    # Investigación documental
+    "requests>=2.32",
+    "pdfplumber>=0.11",
+    "python-dotenv>=1.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "ipykernel>=6.29",
+    "jupyterlab>=4.2",
+]
+
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/observatorio"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
