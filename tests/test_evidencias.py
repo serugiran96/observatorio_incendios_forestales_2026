@@ -118,7 +118,9 @@ def test_detecta_datos_personales(texto):
     assert any("dato personal" in e for e in _errores(descripcion=texto))
 
 
-@pytest.mark.parametrize("texto", ["1 500 ha afectadas", "S/ 12,500,000 asignados", "2026-10-05"])
+@pytest.mark.parametrize(
+    "texto", ["1 500 ha afectadas", "S/ 12,500,000 asignados", "2026-10-05", "también en E-OGRD-93816452-00", "SINPAD 270073"]
+)
 def test_no_confunde_cifras_con_datos_personales(texto):
     assert not ev.contiene_dato_personal(texto)
 

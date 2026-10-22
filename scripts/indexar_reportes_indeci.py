@@ -2,7 +2,10 @@
 recorriendo el feed RSS del portal de emergencias de INDECI (ordenado por fecha).
 
 Uso:
-    uv run python scripts/indexar_reportes_indeci.py
+    uv run python scripts/indexar_reportes_indeci.py [--descargar]
+
+Con --descargar, además baja el PDF de cada reporte a data/raw/documentos/indeci_coen_2026/
+(no versionado) y registra su nombre en el índice.
 
 Salida:
     data/processed/indice_reportes_indeci_cusco.csv
@@ -12,6 +15,7 @@ Salida:
 
 from __future__ import annotations
 
+import argparse
 import html
 import re
 import sys
@@ -24,6 +28,10 @@ import pandas as pd
 import requests
 
 from observatorio import config
+
+CARPETA_PDF = config.DIR_DOCUMENTOS / "indeci_coen_2026"
+_ENLACE_PDF = re.compile(r'href="(https://portal\.indeci\.gob\.pe/wp-content/uploads/[^"]+\.pdf)"', re.IGNORECASE)
+_CABECERAS = {"User-Agent": "observatorio-incendios-cusco (proyecto universitario)"}
 
 URL_FEED = "https://portal.indeci.gob.pe/emergencias/feed/"
 BUSQUEDA = "incendio forestal cusco"
@@ -56,7 +64,7 @@ def leer_pagina(numero: int) -> list[dict]:
     respuesta = requests.get(
         URL_FEED,
         params={"s": BUSQUEDA, "paged": numero},
-        headers={"User-Agent": "observatorio-incendios-cusco (proyecto universitario)"},
+        headers=_CABECERAS,
         timeout=90,
     )
     if respuesta.status_code == 404:
@@ -75,7 +83,37 @@ def leer_pagina(numero: int) -> list[dict]:
     return items
 
 
+def descargar_pdf(url_reporte: str, numero: int) -> str:
+    """Descarga el PDF del reporte; devuelve el nombre del archivo.
+
+    La página de cada reporte también enlaza PDF de otros reportes recientes (de cualquier región),
+    así que se exige que el nombre del archivo contenga el número del reporte.
+    """
+    pagina = requests.get(url_reporte, headers=_CABECERAS, timeout=90)
+    pagina.raise_for_status()
+    enlaces = [
+        e for e in _ENLACE_PDF.findall(pagina.text)
+        if re.search(rf"N\.?\D{{0,3}}0*{numero}\D", requests.utils.unquote(e), re.IGNORECASE)
+    ]
+    if not enlaces:
+        print(f"AVISO: no se encontró el PDF del reporte {numero} en {url_reporte}")
+        return ""
+    url_pdf = enlaces[0]
+    nombre = requests.utils.unquote(url_pdf.rsplit("/", 1)[-1])
+    destino = CARPETA_PDF / nombre
+    if not destino.exists():
+        respuesta = requests.get(url_pdf, headers=_CABECERAS, timeout=120)
+        respuesta.raise_for_status()
+        destino.write_bytes(respuesta.content)
+        time.sleep(PAUSA_SEGUNDOS)
+    return nombre
+
+
 def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument("--descargar", action="store_true", help="descargar el PDF de cada reporte")
+    args = parser.parse_args()
+
     registros, no_reconocidos, pagina = [], [], 1
     while pagina <= MAX_PAGINAS:
         items = leer_pagina(pagina)
@@ -110,6 +148,21 @@ def main() -> int:
 
     indice = pd.DataFrame(registros).drop_duplicates("url")
     indice = indice[indice["fecha_reporte"] >= INICIO.date().isoformat()].sort_values(["fecha_reporte", "numero"])
+    if args.descargar:
+        CARPETA_PDF.mkdir(parents=True, exist_ok=True)
+        archivos = []
+        for k, (url, numero) in enumerate(zip(indice["url"], indice["numero"]), start=1):
+            try:
+                archivos.append(descargar_pdf(url, numero))
+            except requests.RequestException as error:
+                print(f"AVISO: no se pudo descargar {url}: {error}")
+                archivos.append("")
+            if k % 20 == 0:
+                print(f"PDF {k}/{len(indice)}")
+            time.sleep(PAUSA_SEGUNDOS)
+        indice["archivo_pdf"] = archivos
+        print(f"PDF disponibles: {sum(1 for a in archivos if a)}/{len(indice)}")
+
     destino = config.DIR_PROCESSED / "indice_reportes_indeci_cusco.csv"
     indice.to_csv(destino, index=False, encoding="utf-8")
     print(f"\nReportes de incendio forestal en Cusco desde {INICIO:%Y-%m-%d}: {len(indice)}")

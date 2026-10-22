@@ -47,17 +47,32 @@ Una fila por afirmación extraída de una fuente.
 | Categoría | Variables |
 |---|---|
 | `evento_incendio` | `incendio_reportado`, `incendio_activo`, `incendio_controlado`, `incendio_extinguido`, `numero_incendios`, `numero_emergencias` |
-| `dano_humano` | `personas_fallecidas`, `personas_lesionadas`, `personas_afectadas`, `personas_damnificadas`, `familias_afectadas` |
-| `dano_vivienda_infraestructura` | `viviendas_afectadas`, `viviendas_destruidas`, `infraestructura_afectada` |
-| `dano_ambiental` | `superficie_afectada`, `cobertura_natural_afectada`, `fuentes_agua_afectadas`, `fauna_afectada` |
-| `dano_productivo` | `cultivos_afectados`, `pastos_afectados`, `ganado_afectado`, `plantaciones_forestales_afectadas` |
+| `dano_humano` | `personas_fallecidas`, `personas_lesionadas`, `personas_afectadas`, `personas_damnificadas`, `personas_desaparecidas`, `familias_afectadas` |
+| `dano_vivienda_infraestructura` | `viviendas_afectadas`, `viviendas_inhabitables`, `viviendas_destruidas`, `infraestructura_afectada` |
+| `dano_ambiental` | `superficie_afectada`, `cobertura_natural_destruida`, `cobertura_natural_afectada`, `fuentes_agua_afectadas`, `fauna_afectada` |
+| `dano_productivo` | `cultivos_afectados`, `cultivos_perdidos`, `pastos_afectados`, `ganado_afectado`, `ganado_perdido`, `plantaciones_forestales_afectadas` |
 | `necesidad` | `necesidad_reportada` |
 | `ayuda_anunciada` | `ayuda_anunciada` |
-| `ayuda_entregada` | `bienes_ayuda_entregados`, `familias_atendidas` |
-| `respuesta_operativa` | `personal_desplegado`, `aeronaves_desplegadas`, `presupuesto_asignado` |
+| `ayuda_entregada` | `entrega_bah`, `atencion_medica`, `insumos_pecuarios`, `bienes_ayuda_entregados`, `familias_atendidas` |
+| `respuesta_operativa` | `personal_desplegado`, `aeronaves_desplegadas`, `presupuesto_asignado`, `accion_respuesta` |
 | `contexto` | Solo `descripcion_cualitativa` |
 
 `descripcion_cualitativa` se admite en cualquier categoría para afirmaciones sin cifra.
+
+Las variables `cobertura_natural_destruida/afectada`, `viviendas_inhabitables`, `ganado_perdido/afectado` y
+`entrega_bah` siguen la terminología de la Evaluación de Daños y Análisis de Necesidades (EDAN) del
+INDECI. "Cobertura natural destruida" es una estimación de campo, no área quemada medida por satélite.
+
+### Prefijos de identificadores
+
+| Prefijo | Origen | Cómo se genera |
+|---|---|---|
+| `F-0001`, `E-0001`, `V-0001` | Curaduría manual | Se editan a mano; los scripts no las modifican |
+| `F-OGRD-*`, `E-OGRD-*` | Reportes diarios OGRD-Congreso | `scripts/extraer_reportes_emergencia.py` |
+| `F-INDECI-*`, `E-INDECI-*` | Reportes COEN-INDECI | `scripts/extraer_reportes_indeci.py` |
+
+Los sufijos de `E-INDECI-<evento>-XX` indican: `00` evento, `Dnn` daño, `Ann` acción de respuesta,
+`B01` anexo de Bienes de Ayuda Humanitaria.
 
 ## `data/raw/registro/vacios_informacion.csv`
 
@@ -72,3 +87,16 @@ Una fila por vacío de información detectado (pregunta 4 del observatorio).
 | `fuentes_consultadas` | IDs de fuentes revisadas o sitios consultados sin resultado |
 | `fecha_registro` | Fecha en que se documentó el vacío |
 | `accion_sugerida` | Cómo podría cerrarse (solicitud de información, verificación en campo...) |
+
+## Archivos procesados (`data/processed/`)
+
+| Archivo | Contenido |
+|---|---|
+| `emergencias_cusco_ogrd.csv` | Tarjetas de incendio forestal de Cusco en los reportes OGRD-Congreso, consolidadas (auditoría) |
+| `indice_reportes_indeci_cusco.csv` | Índice de reportes COEN-INDECI (número, fecha, lugar, enlace, PDF local) |
+| `incendios_cusco_consolidado.csv` | **Inventario de incendios**: una fila por incendio con fuente principal, ubicación, fecha de ocurrencia, código SINPAD, estado, cifras de daños (EDAN), indicadores de ayuda documentada y posibles duplicados |
+| `acciones_respuesta_indeci.csv` | Todas las acciones de respuesta reportadas al COEN (fecha, nivel, entidad, tipo, texto) |
+
+En el inventario, `estado` resume el último reporte disponible: "cerrado (emergencia atendida)",
+"cierre temporal (atención en curso)" o "abierto al último reporte". Este último significa que en los
+reportes indexados no consta el cierre, no que la emergencia siga activa.

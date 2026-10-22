@@ -35,3 +35,7 @@ def test_trece_provincias_de_cusco():
 def test_obligatorias_son_columnas_existentes():
     assert set(esquemas.OBLIGATORIAS_FUENTES) <= set(esquemas.COLUMNAS_FUENTES)
     assert set(esquemas.OBLIGATORIAS_EVIDENCIAS) <= set(esquemas.COLUMNAS_EVIDENCIAS)
+
+
+def test_todas_las_variables_tienen_etiqueta():
+    assert set(esquemas.VARIABLES) | {esquemas.VARIABLE_CUALITATIVA} <= set(esquemas.ETIQUETAS_VARIABLES)

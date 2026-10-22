@@ -26,7 +26,7 @@ Detalle en [`docs/criterios_verificacion.md`](docs/criterios_verificacion.md).
 | Fase | Contenido | Estado |
 |---|---|---|
 | 1 | Entorno, estructura, esquemas y plan | Completa |
-| 2 | Investigación documental y registro de evidencias | En curso |
+| 2 | Investigación documental y registro de evidencias | Completa (inventario al 21-oct-2026) |
 | 3 | Análisis geoespacial (Earth Engine, FIRMS) | Pendiente (requiere credenciales) |
 | 4 | Dashboard Streamlit | Pendiente |
 | 5 | Informe ejecutivo | Pendiente |
@@ -42,7 +42,8 @@ Ver [`docs/plan_de_trabajo.md`](docs/plan_de_trabajo.md).
 │   ├── config.py           #   rutas, fecha de corte, sistemas de referencia
 │   ├── esquemas.py         #   columnas, vocabularios y reglas de coherencia
 │   ├── evidencias.py       #   carga, validación y escritura del registro
-│   └── reportes_emergencia.py  # extracción de los reportes de emergencias (PDF)
+│   ├── reportes_emergencia.py  # extracción de los reportes diarios OGRD-Congreso (PDF)
+│   └── reportes_indeci.py      # extracción de los reportes COEN-INDECI (PDF)
 ├── scripts/                # Procesos ejecutables (validación, descargas, análisis)
 ├── data/
 │   ├── raw/registro/       # fuentes.csv, evidencias.csv, vacios_informacion.csv (versionados)
@@ -85,7 +86,8 @@ Ver `docs/decisiones_tecnicas.md` (DT-09).
 uv run pytest                                             # pruebas
 uv run python scripts/validar_registro.py                 # valida fuentes, evidencias y vacíos de información
 uv run python scripts/extraer_reportes_emergencia.py --descargar   # reportes OGRD-Congreso -> registro
-uv run python scripts/indexar_reportes_indeci.py          # índice de reportes COEN-INDECI de Cusco
+uv run python scripts/indexar_reportes_indeci.py --descargar   # índice y PDF de reportes COEN-INDECI de Cusco
+uv run python scripts/extraer_reportes_indeci.py          # PDF COEN-INDECI -> registro e inventario consolidado
 ```
 
 El análisis geoespacial (Fase 3) y el dashboard (Fase 4) agregarán sus comandos aquí.

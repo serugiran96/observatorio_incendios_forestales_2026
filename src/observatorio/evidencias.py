@@ -16,8 +16,9 @@ import pandas as pd
 from observatorio import config, esquemas
 
 # Heurística conservadora para detectar datos personales que no deben registrarse
-_PATRON_DNI = re.compile(r"(?<![\d.,])\d{8}(?![\d.,])")
-_PATRON_CELULAR = re.compile(r"(?<!\d)9\d{2}[\s-]?\d{3}[\s-]?\d{3}(?!\d)")
+# Los dígitos que forman parte de un identificador (p. ej. "E-OGRD-93816452-00") no cuentan.
+_PATRON_DNI = re.compile(r"(?<![\w.,-])\d{8}(?![\w.,-])")
+_PATRON_CELULAR = re.compile(r"(?<![\w-])9\d{2}[\s-]?\d{3}[\s-]?\d{3}(?![\w-])")
 _PATRON_UBIGEO = re.compile(rf"^{config.CODIGO_DEPARTAMENTO_CUSCO}\d{{4}}$")
 
 
@@ -231,9 +232,14 @@ def validar_evidencias(evidencias: pd.DataFrame, fuentes: pd.DataFrame) -> Resul
         _validar_territorio(fila, res)
         _validar_contenido(fila, res)
 
-    # Posibles duplicados: misma fuente, lugar, variable, fecha y valor
+    # Posibles duplicados: misma fuente, lugar, variable, fecha y valor; en afirmaciones sin cifra
+    # (acciones, descripciones) también debe coincidir el texto
     claves = ["id_fuente", "provincia", "distrito", "localidad", "categoria", "variable", "fecha_evento", "valor"]
-    repetidas = evidencias.loc[evidencias.duplicated(claves, keep=False), "id_evidencia"].tolist()
+    con_cifra, sin_cifra = evidencias[evidencias["valor"] != ""], evidencias[evidencias["valor"] == ""]
+    repetidas = (
+        con_cifra.loc[con_cifra.duplicated(claves, keep=False), "id_evidencia"].tolist()
+        + sin_cifra.loc[sin_cifra.duplicated(claves + ["descripcion"], keep=False), "id_evidencia"].tolist()
+    )
     if repetidas:
         res.advertencias.append(f"posibles evidencias duplicadas: {repetidas}")
     return res
